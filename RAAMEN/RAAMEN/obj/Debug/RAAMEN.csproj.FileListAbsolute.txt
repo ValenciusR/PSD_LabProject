@@ -1,63 +1,63 @@
-D:\OneDrive - Bina Nusantara\Kuliah\Semester 4\PSD\Lab\RAAMEN\RAAMEN\bin\RAAMEN.dll.config
-D:\OneDrive - Bina Nusantara\Kuliah\Semester 4\PSD\Lab\RAAMEN\RAAMEN\bin\RAAMEN.dll
-D:\OneDrive - Bina Nusantara\Kuliah\Semester 4\PSD\Lab\RAAMEN\RAAMEN\bin\RAAMEN.pdb
-D:\OneDrive - Bina Nusantara\Kuliah\Semester 4\PSD\Lab\RAAMEN\RAAMEN\bin\roslyn\csc.exe
-D:\OneDrive - Bina Nusantara\Kuliah\Semester 4\PSD\Lab\RAAMEN\RAAMEN\bin\roslyn\csc.exe.config
-D:\OneDrive - Bina Nusantara\Kuliah\Semester 4\PSD\Lab\RAAMEN\RAAMEN\bin\roslyn\csc.rsp
-D:\OneDrive - Bina Nusantara\Kuliah\Semester 4\PSD\Lab\RAAMEN\RAAMEN\bin\roslyn\csi.exe
-D:\OneDrive - Bina Nusantara\Kuliah\Semester 4\PSD\Lab\RAAMEN\RAAMEN\bin\roslyn\csi.exe.config
-D:\OneDrive - Bina Nusantara\Kuliah\Semester 4\PSD\Lab\RAAMEN\RAAMEN\bin\roslyn\csi.rsp
-D:\OneDrive - Bina Nusantara\Kuliah\Semester 4\PSD\Lab\RAAMEN\RAAMEN\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-D:\OneDrive - Bina Nusantara\Kuliah\Semester 4\PSD\Lab\RAAMEN\RAAMEN\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-D:\OneDrive - Bina Nusantara\Kuliah\Semester 4\PSD\Lab\RAAMEN\RAAMEN\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
-D:\OneDrive - Bina Nusantara\Kuliah\Semester 4\PSD\Lab\RAAMEN\RAAMEN\bin\roslyn\Microsoft.CodeAnalysis.dll
-D:\OneDrive - Bina Nusantara\Kuliah\Semester 4\PSD\Lab\RAAMEN\RAAMEN\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
-D:\OneDrive - Bina Nusantara\Kuliah\Semester 4\PSD\Lab\RAAMEN\RAAMEN\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-D:\OneDrive - Bina Nusantara\Kuliah\Semester 4\PSD\Lab\RAAMEN\RAAMEN\bin\roslyn\Microsoft.CSharp.Core.targets
-D:\OneDrive - Bina Nusantara\Kuliah\Semester 4\PSD\Lab\RAAMEN\RAAMEN\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
-D:\OneDrive - Bina Nusantara\Kuliah\Semester 4\PSD\Lab\RAAMEN\RAAMEN\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
-D:\OneDrive - Bina Nusantara\Kuliah\Semester 4\PSD\Lab\RAAMEN\RAAMEN\bin\roslyn\Microsoft.Managed.Core.targets
-D:\OneDrive - Bina Nusantara\Kuliah\Semester 4\PSD\Lab\RAAMEN\RAAMEN\bin\roslyn\Microsoft.VisualBasic.Core.targets
-D:\OneDrive - Bina Nusantara\Kuliah\Semester 4\PSD\Lab\RAAMEN\RAAMEN\bin\roslyn\Microsoft.Win32.Primitives.dll
-D:\OneDrive - Bina Nusantara\Kuliah\Semester 4\PSD\Lab\RAAMEN\RAAMEN\bin\roslyn\System.AppContext.dll
-D:\OneDrive - Bina Nusantara\Kuliah\Semester 4\PSD\Lab\RAAMEN\RAAMEN\bin\roslyn\System.Collections.Immutable.dll
-D:\OneDrive - Bina Nusantara\Kuliah\Semester 4\PSD\Lab\RAAMEN\RAAMEN\bin\roslyn\System.Console.dll
-D:\OneDrive - Bina Nusantara\Kuliah\Semester 4\PSD\Lab\RAAMEN\RAAMEN\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
-D:\OneDrive - Bina Nusantara\Kuliah\Semester 4\PSD\Lab\RAAMEN\RAAMEN\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
-D:\OneDrive - Bina Nusantara\Kuliah\Semester 4\PSD\Lab\RAAMEN\RAAMEN\bin\roslyn\System.Diagnostics.StackTrace.dll
-D:\OneDrive - Bina Nusantara\Kuliah\Semester 4\PSD\Lab\RAAMEN\RAAMEN\bin\roslyn\System.Globalization.Calendars.dll
-D:\OneDrive - Bina Nusantara\Kuliah\Semester 4\PSD\Lab\RAAMEN\RAAMEN\bin\roslyn\System.IO.Compression.dll
-D:\OneDrive - Bina Nusantara\Kuliah\Semester 4\PSD\Lab\RAAMEN\RAAMEN\bin\roslyn\System.IO.Compression.ZipFile.dll
-D:\OneDrive - Bina Nusantara\Kuliah\Semester 4\PSD\Lab\RAAMEN\RAAMEN\bin\roslyn\System.IO.FileSystem.dll
-D:\OneDrive - Bina Nusantara\Kuliah\Semester 4\PSD\Lab\RAAMEN\RAAMEN\bin\roslyn\System.IO.FileSystem.Primitives.dll
-D:\OneDrive - Bina Nusantara\Kuliah\Semester 4\PSD\Lab\RAAMEN\RAAMEN\bin\roslyn\System.Net.Http.dll
-D:\OneDrive - Bina Nusantara\Kuliah\Semester 4\PSD\Lab\RAAMEN\RAAMEN\bin\roslyn\System.Net.Sockets.dll
-D:\OneDrive - Bina Nusantara\Kuliah\Semester 4\PSD\Lab\RAAMEN\RAAMEN\bin\roslyn\System.Reflection.Metadata.dll
-D:\OneDrive - Bina Nusantara\Kuliah\Semester 4\PSD\Lab\RAAMEN\RAAMEN\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
-D:\OneDrive - Bina Nusantara\Kuliah\Semester 4\PSD\Lab\RAAMEN\RAAMEN\bin\roslyn\System.Security.Cryptography.Algorithms.dll
-D:\OneDrive - Bina Nusantara\Kuliah\Semester 4\PSD\Lab\RAAMEN\RAAMEN\bin\roslyn\System.Security.Cryptography.Encoding.dll
-D:\OneDrive - Bina Nusantara\Kuliah\Semester 4\PSD\Lab\RAAMEN\RAAMEN\bin\roslyn\System.Security.Cryptography.Primitives.dll
-D:\OneDrive - Bina Nusantara\Kuliah\Semester 4\PSD\Lab\RAAMEN\RAAMEN\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
-D:\OneDrive - Bina Nusantara\Kuliah\Semester 4\PSD\Lab\RAAMEN\RAAMEN\bin\roslyn\System.Text.Encoding.CodePages.dll
-D:\OneDrive - Bina Nusantara\Kuliah\Semester 4\PSD\Lab\RAAMEN\RAAMEN\bin\roslyn\System.Threading.Tasks.Extensions.dll
-D:\OneDrive - Bina Nusantara\Kuliah\Semester 4\PSD\Lab\RAAMEN\RAAMEN\bin\roslyn\System.ValueTuple.dll
-D:\OneDrive - Bina Nusantara\Kuliah\Semester 4\PSD\Lab\RAAMEN\RAAMEN\bin\roslyn\System.Xml.ReaderWriter.dll
-D:\OneDrive - Bina Nusantara\Kuliah\Semester 4\PSD\Lab\RAAMEN\RAAMEN\bin\roslyn\System.Xml.XmlDocument.dll
-D:\OneDrive - Bina Nusantara\Kuliah\Semester 4\PSD\Lab\RAAMEN\RAAMEN\bin\roslyn\System.Xml.XPath.dll
-D:\OneDrive - Bina Nusantara\Kuliah\Semester 4\PSD\Lab\RAAMEN\RAAMEN\bin\roslyn\System.Xml.XPath.XDocument.dll
-D:\OneDrive - Bina Nusantara\Kuliah\Semester 4\PSD\Lab\RAAMEN\RAAMEN\bin\roslyn\vbc.exe
-D:\OneDrive - Bina Nusantara\Kuliah\Semester 4\PSD\Lab\RAAMEN\RAAMEN\bin\roslyn\vbc.exe.config
-D:\OneDrive - Bina Nusantara\Kuliah\Semester 4\PSD\Lab\RAAMEN\RAAMEN\bin\roslyn\vbc.rsp
-D:\OneDrive - Bina Nusantara\Kuliah\Semester 4\PSD\Lab\RAAMEN\RAAMEN\bin\roslyn\VBCSCompiler.exe
-D:\OneDrive - Bina Nusantara\Kuliah\Semester 4\PSD\Lab\RAAMEN\RAAMEN\bin\roslyn\VBCSCompiler.exe.config
-D:\OneDrive - Bina Nusantara\Kuliah\Semester 4\PSD\Lab\RAAMEN\RAAMEN\bin\EntityFramework.dll
-D:\OneDrive - Bina Nusantara\Kuliah\Semester 4\PSD\Lab\RAAMEN\RAAMEN\bin\EntityFramework.SqlServer.dll
-D:\OneDrive - Bina Nusantara\Kuliah\Semester 4\PSD\Lab\RAAMEN\RAAMEN\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-D:\OneDrive - Bina Nusantara\Kuliah\Semester 4\PSD\Lab\RAAMEN\RAAMEN\bin\EntityFramework.xml
-D:\OneDrive - Bina Nusantara\Kuliah\Semester 4\PSD\Lab\RAAMEN\RAAMEN\bin\EntityFramework.SqlServer.xml
-D:\OneDrive - Bina Nusantara\Kuliah\Semester 4\PSD\Lab\RAAMEN\RAAMEN\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-D:\OneDrive - Bina Nusantara\Kuliah\Semester 4\PSD\Lab\RAAMEN\RAAMEN\obj\Debug\RAAMEN.csproj.AssemblyReference.cache
-D:\OneDrive - Bina Nusantara\Kuliah\Semester 4\PSD\Lab\RAAMEN\RAAMEN\obj\Debug\RAAMEN.csproj.CoreCompileInputs.cache
-D:\OneDrive - Bina Nusantara\Kuliah\Semester 4\PSD\Lab\RAAMEN\RAAMEN\obj\Debug\RAAMEN.csproj.CopyComplete
-D:\OneDrive - Bina Nusantara\Kuliah\Semester 4\PSD\Lab\RAAMEN\RAAMEN\obj\Debug\RAAMEN.dll
-D:\OneDrive - Bina Nusantara\Kuliah\Semester 4\PSD\Lab\RAAMEN\RAAMEN\obj\Debug\RAAMEN.pdb
+D:\Coding_Stuff\Website Projects\PSD_LabProject\RAAMEN\RAAMEN\bin\RAAMEN.dll.config
+D:\Coding_Stuff\Website Projects\PSD_LabProject\RAAMEN\RAAMEN\bin\RAAMEN.dll
+D:\Coding_Stuff\Website Projects\PSD_LabProject\RAAMEN\RAAMEN\bin\RAAMEN.pdb
+D:\Coding_Stuff\Website Projects\PSD_LabProject\RAAMEN\RAAMEN\bin\roslyn\csc.exe
+D:\Coding_Stuff\Website Projects\PSD_LabProject\RAAMEN\RAAMEN\bin\roslyn\csc.exe.config
+D:\Coding_Stuff\Website Projects\PSD_LabProject\RAAMEN\RAAMEN\bin\roslyn\csc.rsp
+D:\Coding_Stuff\Website Projects\PSD_LabProject\RAAMEN\RAAMEN\bin\roslyn\csi.exe
+D:\Coding_Stuff\Website Projects\PSD_LabProject\RAAMEN\RAAMEN\bin\roslyn\csi.exe.config
+D:\Coding_Stuff\Website Projects\PSD_LabProject\RAAMEN\RAAMEN\bin\roslyn\csi.rsp
+D:\Coding_Stuff\Website Projects\PSD_LabProject\RAAMEN\RAAMEN\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Coding_Stuff\Website Projects\PSD_LabProject\RAAMEN\RAAMEN\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Coding_Stuff\Website Projects\PSD_LabProject\RAAMEN\RAAMEN\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Coding_Stuff\Website Projects\PSD_LabProject\RAAMEN\RAAMEN\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Coding_Stuff\Website Projects\PSD_LabProject\RAAMEN\RAAMEN\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Coding_Stuff\Website Projects\PSD_LabProject\RAAMEN\RAAMEN\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Coding_Stuff\Website Projects\PSD_LabProject\RAAMEN\RAAMEN\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Coding_Stuff\Website Projects\PSD_LabProject\RAAMEN\RAAMEN\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Coding_Stuff\Website Projects\PSD_LabProject\RAAMEN\RAAMEN\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Coding_Stuff\Website Projects\PSD_LabProject\RAAMEN\RAAMEN\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Coding_Stuff\Website Projects\PSD_LabProject\RAAMEN\RAAMEN\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Coding_Stuff\Website Projects\PSD_LabProject\RAAMEN\RAAMEN\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Coding_Stuff\Website Projects\PSD_LabProject\RAAMEN\RAAMEN\bin\roslyn\System.AppContext.dll
+D:\Coding_Stuff\Website Projects\PSD_LabProject\RAAMEN\RAAMEN\bin\roslyn\System.Collections.Immutable.dll
+D:\Coding_Stuff\Website Projects\PSD_LabProject\RAAMEN\RAAMEN\bin\roslyn\System.Console.dll
+D:\Coding_Stuff\Website Projects\PSD_LabProject\RAAMEN\RAAMEN\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\Coding_Stuff\Website Projects\PSD_LabProject\RAAMEN\RAAMEN\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Coding_Stuff\Website Projects\PSD_LabProject\RAAMEN\RAAMEN\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Coding_Stuff\Website Projects\PSD_LabProject\RAAMEN\RAAMEN\bin\roslyn\System.Globalization.Calendars.dll
+D:\Coding_Stuff\Website Projects\PSD_LabProject\RAAMEN\RAAMEN\bin\roslyn\System.IO.Compression.dll
+D:\Coding_Stuff\Website Projects\PSD_LabProject\RAAMEN\RAAMEN\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\Coding_Stuff\Website Projects\PSD_LabProject\RAAMEN\RAAMEN\bin\roslyn\System.IO.FileSystem.dll
+D:\Coding_Stuff\Website Projects\PSD_LabProject\RAAMEN\RAAMEN\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Coding_Stuff\Website Projects\PSD_LabProject\RAAMEN\RAAMEN\bin\roslyn\System.Net.Http.dll
+D:\Coding_Stuff\Website Projects\PSD_LabProject\RAAMEN\RAAMEN\bin\roslyn\System.Net.Sockets.dll
+D:\Coding_Stuff\Website Projects\PSD_LabProject\RAAMEN\RAAMEN\bin\roslyn\System.Reflection.Metadata.dll
+D:\Coding_Stuff\Website Projects\PSD_LabProject\RAAMEN\RAAMEN\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Coding_Stuff\Website Projects\PSD_LabProject\RAAMEN\RAAMEN\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Coding_Stuff\Website Projects\PSD_LabProject\RAAMEN\RAAMEN\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Coding_Stuff\Website Projects\PSD_LabProject\RAAMEN\RAAMEN\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Coding_Stuff\Website Projects\PSD_LabProject\RAAMEN\RAAMEN\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Coding_Stuff\Website Projects\PSD_LabProject\RAAMEN\RAAMEN\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Coding_Stuff\Website Projects\PSD_LabProject\RAAMEN\RAAMEN\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Coding_Stuff\Website Projects\PSD_LabProject\RAAMEN\RAAMEN\bin\roslyn\System.ValueTuple.dll
+D:\Coding_Stuff\Website Projects\PSD_LabProject\RAAMEN\RAAMEN\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Coding_Stuff\Website Projects\PSD_LabProject\RAAMEN\RAAMEN\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Coding_Stuff\Website Projects\PSD_LabProject\RAAMEN\RAAMEN\bin\roslyn\System.Xml.XPath.dll
+D:\Coding_Stuff\Website Projects\PSD_LabProject\RAAMEN\RAAMEN\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Coding_Stuff\Website Projects\PSD_LabProject\RAAMEN\RAAMEN\bin\roslyn\vbc.exe
+D:\Coding_Stuff\Website Projects\PSD_LabProject\RAAMEN\RAAMEN\bin\roslyn\vbc.exe.config
+D:\Coding_Stuff\Website Projects\PSD_LabProject\RAAMEN\RAAMEN\bin\roslyn\vbc.rsp
+D:\Coding_Stuff\Website Projects\PSD_LabProject\RAAMEN\RAAMEN\bin\roslyn\VBCSCompiler.exe
+D:\Coding_Stuff\Website Projects\PSD_LabProject\RAAMEN\RAAMEN\bin\roslyn\VBCSCompiler.exe.config
+D:\Coding_Stuff\Website Projects\PSD_LabProject\RAAMEN\RAAMEN\bin\EntityFramework.dll
+D:\Coding_Stuff\Website Projects\PSD_LabProject\RAAMEN\RAAMEN\bin\EntityFramework.SqlServer.dll
+D:\Coding_Stuff\Website Projects\PSD_LabProject\RAAMEN\RAAMEN\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Coding_Stuff\Website Projects\PSD_LabProject\RAAMEN\RAAMEN\bin\EntityFramework.xml
+D:\Coding_Stuff\Website Projects\PSD_LabProject\RAAMEN\RAAMEN\bin\EntityFramework.SqlServer.xml
+D:\Coding_Stuff\Website Projects\PSD_LabProject\RAAMEN\RAAMEN\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Coding_Stuff\Website Projects\PSD_LabProject\RAAMEN\RAAMEN\obj\Debug\RAAMEN.csproj.AssemblyReference.cache
+D:\Coding_Stuff\Website Projects\PSD_LabProject\RAAMEN\RAAMEN\obj\Debug\RAAMEN.csproj.CoreCompileInputs.cache
+D:\Coding_Stuff\Website Projects\PSD_LabProject\RAAMEN\RAAMEN\obj\Debug\RAAMEN.csproj.CopyComplete
+D:\Coding_Stuff\Website Projects\PSD_LabProject\RAAMEN\RAAMEN\obj\Debug\RAAMEN.dll
+D:\Coding_Stuff\Website Projects\PSD_LabProject\RAAMEN\RAAMEN\obj\Debug\RAAMEN.pdb
