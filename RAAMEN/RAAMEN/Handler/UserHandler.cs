@@ -15,5 +15,15 @@ namespace RAAMEN.Handler
             User user = UserFactory.createUser(name, email, gender, password);
             UserRepository.InsertUser(user);
         }
+
+        public static void UpdateUser(int id, string name, string email, string gender)
+        {
+            UserRepository.UpdateUser(id, name, email, gender);
+        }
+
+        public static bool isPasswordInvalid(int id, string pass)
+        {
+            return UserRepository.isPasswordInvalid(id, pass);
+        }
     }
 }

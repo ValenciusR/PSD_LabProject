@@ -94,6 +94,7 @@
     <Content Include="View\InsertRamen.aspx" />
     <Content Include="View\Login.aspx" />
     <Content Include="View\ManageRamen.aspx" />
+    <Content Include="View\Profile.aspx" />
     <Content Include="View\Register.aspx" />
     <Content Include="View\Staff\StaffHome.aspx" />
     <Content Include="View\UpdateRamen.aspx" />
@@ -197,6 +198,13 @@
     </Compile>
     <Compile Include="View\MasterPage\StaffMasterPage.Master.designer.cs">
       <DependentUpon>StaffMasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="View\Profile.aspx.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Profile.aspx.designer.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
     </Compile>
     <Compile Include="View\Register.aspx.cs">
       <DependentUpon>Register.aspx</DependentUpon>

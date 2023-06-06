@@ -15,5 +15,26 @@ namespace RAAMEN.Repository
             db.Users.Add(user);
             db.SaveChanges();
         }
+
+        public static void UpdateUser(int id, string name, string email, string gender)
+        {
+            User user = db.Users.Find(id);
+            user.Username = name;
+            user.Email = email;
+            user.Gender = gender;
+        }
+
+        public static bool isPasswordInvalid(int id, string pass)
+        {
+            User user = db.Users.Find(id);
+            if(user.Password != pass)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
     }
 }
