@@ -28,22 +28,14 @@ namespace RAAMEN.View
             {
                 gender = RadioFemale.Text;
             }
-
-            if (NameTxb.Text == "" || EmailTxb.Text == "" || gender == "" || PassTxb.Text == "" || ConfirmTxb.Text == "")
-            {
-                status.Text = "You must fill in all in the form!";
-            }
-            else if (PassTxb.Text != "" && ConfirmTxb.Text != "" && PassTxb.Text != ConfirmTxb.Text)
-            {
-                status.Text = "Password input must be the same input with Confirm Password!";
-            }
             // else if(checkUser != null)
             // {
                 // status.Text = "User already exists!";
             // }
-            else
+            string result = UserController.InsertUser(NameTxb.Text, EmailTxb.Text, gender, PassTxb.Text, ConfirmTxb.Text);
+            status.Text = result;
+            if(result == "")
             {
-                UserController.InsertUser(NameTxb.Text, EmailTxb.Text, gender, PassTxb.Text);
 
                 Response.Redirect("Login.aspx");
             }
