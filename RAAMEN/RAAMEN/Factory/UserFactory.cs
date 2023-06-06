@@ -8,15 +8,15 @@ namespace RAAMEN.Factory
 {
     public class UserFactory
     {
-        public static User createUser(string name, string email, string gender, string pass)
+        public static User createUser(string name, string email, string gender, string password)
         {
-            User u = new User();
-            u.Username = name;
-            u.Email = email;
-            u.Gender = gender;
-            u.Password = pass;
-
-            return u;
+            User user = new User();
+            user.Username = name;
+            user.Email = email;
+            user.Gender = gender;
+            user.RoleId = 3;
+            user.Password = password;
+            return user;
         }
     }
 }

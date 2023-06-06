@@ -1,4 +1,5 @@
-﻿using RAAMEN.Repository;
+﻿using RAAMEN.Handler;
+using RAAMEN.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,18 +9,14 @@ namespace RAAMEN.Controller
 {
     public class UserController
     {
-        public static string RegisterUser(string name, string email, string confirm, string gender, string pass)
+        public static void InsertUser(string name, string email, string gender, string password)
         {
-            if (name.Equals("") || email.Equals("") || confirm.Equals("") || gender.Equals("") || pass.Equals(""))
-            {
-                return "Please all of the fields!";
-            }
-            else if (!pass.Equals(confirm))
-            {
-                return "Password must be the same with Confirm Password!";
-            }
+            UserHandler.InsertUser(name, email, gender, password);
+        }
 
-            return UserRepository.RegisterUser(name, email, gender, pass);
+        public static User getUserById(int id)
+        {
+            return UserHandler.getUserById(id);
         }
     }
 }

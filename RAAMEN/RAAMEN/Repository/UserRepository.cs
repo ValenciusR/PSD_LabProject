@@ -1,5 +1,4 @@
-﻿using RAAMEN.Factory;
-using RAAMEN.Model;
+﻿using RAAMEN.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,15 +8,17 @@ namespace RAAMEN.Repository
 {
     public class UserRepository
     {
-        public static User RegisterUser(string name, string email, string gender, string pass)
+        static DatabaseEntities db = new DatabaseEntities();
+
+        public static void InsertUser(User user)
         {
-            DatabaseEntities db = new DatabaseEntities();
-            User u = UserFactory.createUser(name, email, gender, pass);
-
-            db.Users.Add(u);
+            db.Users.Add(user);
             db.SaveChanges();
+        }
 
-            return "User Successfully Registered!";
+        public static User getUserById(int id)
+        {
+            return db.Users.Find(id);
         }
     }
 }
