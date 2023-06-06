@@ -29,6 +29,38 @@ namespace RAAMEN.Controller
             return result;
         }
 
+
+        public static string UpdateUser(int id, string name, string email, string gender, string password)
+        {
+            string result = "";
+            if (name == "" || email == "" || gender == "" || password == "")
+            {
+                result = "You must fill all of the field!";
+            }
+            else if (name.Length < 5 && name.Length > 15)
+            {
+                result = "Username must be between 5 - 15 character length";
+            }
+            else if (!email.EndsWith(".com"))
+            {
+                result = "Email must ends with '.com'";
+            }
+            else if (!(gender == "male") && !(gender == "female"))
+            {
+                result = "Gender must be choosen";
+            }
+            else if (UserHandler.isPasswordInvalid(id, password))
+            {
+                result = "Password invalid";
+            }
+            else
+            {
+                UserHandler.UpdateUser(id, name, email, gender);
+            }
+
+            return result;
+        }
+
         public static User checkUser(string email, string password)
         {
             User user = (from u in db.Users where u.Username.Equals(email) && u.Password.Equals(password) select u).FirstOrDefault();
