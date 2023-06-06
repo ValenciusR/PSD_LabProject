@@ -13,5 +13,15 @@ namespace RAAMEN.View.MasterPage
         {
 
         }
+
+        protected void LogoutBtn_Click(object sender, EventArgs e)
+        {
+            HttpCookie cookie = Request.Cookies["DataUser"];
+
+            cookie.Expires = DateTime.Now.AddDays(-1);
+            Response.Cookies.Add(cookie);
+
+            Response.Redirect("../Login.aspx");
+        }
     }
 }

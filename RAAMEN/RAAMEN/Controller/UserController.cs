@@ -9,6 +9,7 @@ namespace RAAMEN.Controller
 {
     public class UserController
     {
+        static DatabaseEntities db = new DatabaseEntities();
         public static string InsertUser(string name, string email, string gender, string password, string confirm)
         {
             string result = "";
@@ -28,9 +29,10 @@ namespace RAAMEN.Controller
             return result;
         }
 
-        public static User getUserById(int id)
+        public static User checkUser(string email, string password)
         {
-            return UserHandler.getUserById(id);
+            User user = (from u in db.Users where u.Username.Equals(email) && u.Password.Equals(password) select u).FirstOrDefault();
+            return user;
         }
     }
 }

@@ -11,7 +11,15 @@ namespace RAAMEN.View.Admin
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            HttpCookie cookie = Request.Cookies["DataUser"];
 
+            if (cookie == null)
+            {
+                Response.Redirect("View.Login.aspx");
+                return;
+            }
+
+            string temp = Session["UserRole"].ToString();
         }
     }
 }

@@ -19,7 +19,6 @@ namespace RAAMEN.View
         protected void RegisterBtn_Click(object sender, EventArgs e)
         {
             string gender = "";
-            // User checkUser = UserController.getUserByName(EmailTxb.Text);
             if (RadioMale.Checked == true)
             {
                 gender = RadioMale.Text;
@@ -28,15 +27,10 @@ namespace RAAMEN.View
             {
                 gender = RadioFemale.Text;
             }
-            // else if(checkUser != null)
-            // {
-                // status.Text = "User already exists!";
-            // }
             string result = UserController.InsertUser(NameTxb.Text, EmailTxb.Text, gender, PassTxb.Text, ConfirmTxb.Text);
             status.Text = result;
             if(result == "")
             {
-
                 Response.Redirect("Login.aspx");
             }
         }

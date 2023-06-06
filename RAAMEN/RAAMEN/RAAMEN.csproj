@@ -90,13 +90,13 @@
       <LastGenOutput>Model.cs</LastGenOutput>
     </Content>
     <Content Include="View\Admin\AdminHome.aspx" />
+    <Content Include="View\Customer\CustomerHome.aspx" />
     <Content Include="View\InsertRamen.aspx" />
     <Content Include="View\Login.aspx" />
     <Content Include="View\ManageRamen.aspx" />
     <Content Include="View\Register.aspx" />
     <Content Include="View\Staff\StaffHome.aspx" />
     <Content Include="View\UpdateRamen.aspx" />
-    <Content Include="View\User\UserHome.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -148,6 +148,13 @@
     </Compile>
     <Compile Include="View\Admin\AdminHome.aspx.designer.cs">
       <DependentUpon>AdminHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Customer\CustomerHome.aspx.cs">
+      <DependentUpon>CustomerHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Customer\CustomerHome.aspx.designer.cs">
+      <DependentUpon>CustomerHome.aspx</DependentUpon>
     </Compile>
     <Compile Include="View\InsertRamen.aspx.cs">
       <DependentUpon>InsertRamen.aspx</DependentUpon>
@@ -211,13 +218,6 @@
     </Compile>
     <Compile Include="View\UpdateRamen.aspx.designer.cs">
       <DependentUpon>UpdateRamen.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="View\User\UserHome.aspx.cs">
-      <DependentUpon>UserHome.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="View\User\UserHome.aspx.designer.cs">
-      <DependentUpon>UserHome.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
