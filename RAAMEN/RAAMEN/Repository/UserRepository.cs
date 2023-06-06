@@ -15,10 +15,5 @@ namespace RAAMEN.Repository
             db.Users.Add(user);
             db.SaveChanges();
         }
-
-        public static User getUserById(int id)
-        {
-            return db.Users.Find(id);
-        }
     }
 }

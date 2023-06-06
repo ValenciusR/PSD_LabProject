@@ -15,10 +15,5 @@ namespace RAAMEN.Handler
             User user = UserFactory.createUser(name, email, gender, password);
             UserRepository.InsertUser(user);
         }
-
-        public static User getUserById(int id)
-        {
-            return UserRepository.getUserById(id);
-        }
     }
 }
