@@ -12,6 +12,11 @@
     <form id="form1" runat="server">
         <div>
             <div>
+                <asp:Button ID="ManageBtn" runat="server" Text="Manage Ramen" OnClick="ManageBtn_Click" />
+                <asp:Button ID="QueueBtn" runat="server" Text="Order Queue" OnClick="QueueBtn_Click" />
+                <asp:Button ID="ProfileBtn" runat="server" Text="Profile" OnClick="ProfileBtn_Click" />
+                <asp:Button ID="HistoryBtn" runat="server" Text="History" OnClick="HistoryBtn_Click" />
+                <asp:Button ID="ReportBtn" runat="server" Text="Report" OnClick="ReportBtn_Click" />
                 <asp:Button ID="LogoutBtn" runat="server" Text="Logout" OnClick="LogoutBtn_Click" />
             </div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">

@@ -30,7 +30,7 @@ namespace RAAMEN.View
                 gender = RadioFemale.Text;
             }
             string pass = PassTxb.Text;
-            UserController.UpdateUser(id, name, email, gender, pass);
+            status.Text = UserController.UpdateUser(id, name, email, gender, pass);
         }
     }
 }

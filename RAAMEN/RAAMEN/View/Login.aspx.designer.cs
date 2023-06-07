@@ -24,22 +24,22 @@ namespace RAAMEN.View
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// EmailLbl control.
+        /// NameLbl control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label EmailLbl;
+        protected global::System.Web.UI.WebControls.Label NameLbl;
 
         /// <summary>
-        /// EmailTxb control.
+        /// NameTxb control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox EmailTxb;
+        protected global::System.Web.UI.WebControls.TextBox NameTxb;
 
         /// <summary>
         /// PassLbl control.
@@ -58,6 +58,15 @@ namespace RAAMEN.View
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox PassTxb;
+
+        /// <summary>
+        /// RememberMeCheckBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox RememberMeCheckBox;
 
         /// <summary>
         /// status control.

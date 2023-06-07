@@ -13,9 +13,21 @@ namespace RAAMEN.Controller
         public static string InsertUser(string name, string email, string gender, string password, string confirm)
         {
             string result = "";
-            if (name == "" || email == "" || gender == "" || password == "" || confirm == "")
+            if (name == "" || email == "" || password == "" || confirm == "")
             {
                 result = "You must fill in all in the form!";
+            }
+            else if (name.Length < 5 || name.Length > 15)
+            {
+                result = "Username must be between 5 - 15 character length";
+            }
+            else if (!email.EndsWith(".com"))
+            {
+                result = "Email must ends with '.com'";
+            }
+            else if (gender == "")
+            {
+                result = "Gender must be choosen";
             }
             else if (password != "" && confirm != "" && password != confirm)
             {
@@ -33,11 +45,11 @@ namespace RAAMEN.Controller
         public static string UpdateUser(int id, string name, string email, string gender, string password)
         {
             string result = "";
-            if (name == "" || email == "" || gender == "" || password == "")
+            if (name == "" || email == "" || password == "")
             {
                 result = "You must fill all of the field!";
             }
-            else if (name.Length < 5 && name.Length > 15)
+            else if (name.Length < 5 || name.Length > 15)
             {
                 result = "Username must be between 5 - 15 character length";
             }
@@ -45,7 +57,7 @@ namespace RAAMEN.Controller
             {
                 result = "Email must ends with '.com'";
             }
-            else if (!(gender == "male") && !(gender == "female"))
+            else if (gender == "")
             {
                 result = "Gender must be choosen";
             }
