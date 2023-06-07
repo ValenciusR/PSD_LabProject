@@ -60,13 +60,13 @@ namespace RAAMEN.View.MasterPage
         protected global::System.Web.UI.WebControls.Button QueueBtn;
 
         /// <summary>
-        /// Profile control.
+        /// ProfileBtn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Profile;
+        protected global::System.Web.UI.WebControls.Button ProfileBtn;
 
         /// <summary>
         /// LogoutBtn control.

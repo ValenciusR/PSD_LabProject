@@ -29,7 +29,7 @@ namespace RAAMEN.View.MasterPage
             // Response.Redirect("namafile.aspx");
         }
 
-        protected void Profile_Click(object sender, EventArgs e)
+        protected void ProfileBtn_Click(object sender, EventArgs e)
         {
             Response.Redirect("../Profile.aspx");
         }
@@ -37,6 +37,10 @@ namespace RAAMEN.View.MasterPage
         protected void LogoutBtn_Click(object sender, EventArgs e)
         {
             FormsAuthentication.SignOut();
+            HttpCookie cookie = Request.Cookies["DataUser"];
+            cookie.Expires = DateTime.Now.AddDays(-1);
+            Response.Cookies.Add(cookie);
+            Session.Clear();
             Response.Redirect("../Login.aspx");
         }
     }

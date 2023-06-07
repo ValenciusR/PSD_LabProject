@@ -10,7 +10,7 @@ namespace RAAMEN.View.Staff
 {
     public partial class StaffHome : System.Web.UI.Page
     {
-        DatabaseEntities db = new DatabaseEntities();
+        private DatabaseEntities db = new DatabaseEntities();
         protected void Page_Load(object sender, EventArgs e)
         {
             HttpCookie cookie = Request.Cookies["DataUser"];

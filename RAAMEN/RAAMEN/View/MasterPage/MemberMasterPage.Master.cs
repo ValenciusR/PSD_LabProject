@@ -33,6 +33,10 @@ namespace RAAMEN.View.MasterPage
         protected void LogoutBtn_Click(object sender, EventArgs e)
         {
             FormsAuthentication.SignOut();
+            HttpCookie cookie = Request.Cookies["DataUser"];
+            cookie.Expires = DateTime.Now.AddDays(-1);
+            Response.Cookies.Add(cookie);
+            Session.Clear();
             Response.Redirect("../Login.aspx");
         }
     }
