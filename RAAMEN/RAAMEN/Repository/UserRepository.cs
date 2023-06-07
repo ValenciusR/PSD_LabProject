@@ -22,6 +22,7 @@ namespace RAAMEN.Repository
             user.Username = name;
             user.Email = email;
             user.Gender = gender;
+            db.SaveChanges();
         }
 
         public static bool isPasswordInvalid(int id, string pass)
@@ -36,5 +37,6 @@ namespace RAAMEN.Repository
                 return false;
             }
         }
+
     }
 }

@@ -659,10 +659,12 @@
       <LastGenOutput>Model.cs</LastGenOutput>
     </Content>
     <Content Include="View\Admin\AdminHome.aspx" />
+    <Content Include="View\History.aspx" />
     <Content Include="View\InsertRamen.aspx" />
     <Content Include="View\Login.aspx" />
     <Content Include="View\ManageRamen.aspx" />
     <Content Include="View\Member\MemberHome.aspx" />
+    <Content Include="View\OrderRamen.aspx" />
     <Content Include="View\Profile.aspx" />
     <Content Include="View\Register.aspx" />
     <Content Include="View\Staff\StaffHome.aspx" />
@@ -672,6 +674,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controller\RamenController.cs" />
+    <Compile Include="Controller\TransactionController.cs" />
     <Compile Include="Controller\UserController.cs" />
     <Compile Include="DataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -679,8 +682,10 @@
       <DependentUpon>DataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Factory\RamenFactory.cs" />
+    <Compile Include="Factory\TransactionFactory.cs" />
     <Compile Include="Factory\UserFactory.cs" />
     <Compile Include="Handler\RamenHandler.cs" />
+    <Compile Include="Handler\TransactionHandler.cs" />
     <Compile Include="Handler\UserHandler.cs" />
     <Compile Include="Model\Detail.cs">
       <DependentUpon>Model.tt</DependentUpon>
@@ -722,6 +727,7 @@
       <DependentUpon>CrystalReport.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Repository\TransactionRepository.cs" />
     <Compile Include="Repository\RamenRepository.cs" />
     <Compile Include="Repository\UserRepository.cs" />
     <Compile Include="View\Admin\AdminHome.aspx.cs">
@@ -730,6 +736,13 @@
     </Compile>
     <Compile Include="View\Admin\AdminHome.aspx.designer.cs">
       <DependentUpon>AdminHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\History.aspx.cs">
+      <DependentUpon>History.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\History.aspx.designer.cs">
+      <DependentUpon>History.aspx</DependentUpon>
     </Compile>
     <Compile Include="View\InsertRamen.aspx.cs">
       <DependentUpon>InsertRamen.aspx</DependentUpon>
@@ -779,6 +792,13 @@
     </Compile>
     <Compile Include="View\Member\MemberHome.aspx.designer.cs">
       <DependentUpon>MemberHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\OrderRamen.aspx.cs">
+      <DependentUpon>OrderRamen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\OrderRamen.aspx.designer.cs">
+      <DependentUpon>OrderRamen.aspx</DependentUpon>
     </Compile>
     <Compile Include="View\Profile.aspx.cs">
       <DependentUpon>Profile.aspx</DependentUpon>

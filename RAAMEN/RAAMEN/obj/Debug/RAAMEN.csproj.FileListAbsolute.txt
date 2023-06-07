@@ -267,3 +267,7 @@ D:\OneDrive - Bina Nusantara\Kuliah\Semester 4\PSD\Lab3\PSD_LabProject\RAAMEN\RA
 D:\OneDrive - Bina Nusantara\Kuliah\Semester 4\PSD\Lab3\PSD_LabProject\RAAMEN\RAAMEN\bin\CrystalDecisions.ReportAppServer.ObjectFactory.dll
 D:\OneDrive - Bina Nusantara\Kuliah\Semester 4\PSD\Lab3\PSD_LabProject\RAAMEN\RAAMEN\bin\CrystalDecisions.ReportAppServer.CommonControls.dll
 D:\OneDrive - Bina Nusantara\Kuliah\Semester 4\PSD\Lab3\PSD_LabProject\RAAMEN\RAAMEN\bin\stdole.dll
+E:\CODE\PSD\PSDFinalProject2\PSD_LabProject\RAAMEN\RAAMEN\obj\Debug\RAAMEN.csproj.AssemblyReference.cache
+E:\CODE\PSD\PSDFinalProject2\PSD_LabProject\RAAMEN\RAAMEN\obj\Debug\RAAMEN.csproj.CoreCompileInputs.cache
+E:\CODE\PSD\PSDFinalProject2\PSD_LabProject\RAAMEN\RAAMEN\obj\Debug\RAAMEN.dll
+E:\CODE\PSD\PSDFinalProject2\PSD_LabProject\RAAMEN\RAAMEN\obj\Debug\RAAMEN.pdb
