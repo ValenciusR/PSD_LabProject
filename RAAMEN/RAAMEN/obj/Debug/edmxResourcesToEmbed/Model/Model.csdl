@@ -21,6 +21,7 @@
     <Property Name="Date" Type="DateTime" Nullable="false" Precision="0" />
     <NavigationProperty Name="Details" Relationship="Self.FK__Detail__HeaderId__300424B4" FromRole="Header" ToRole="Detail" />
     <NavigationProperty Name="User" Relationship="Self.FK__Header__Customer__286302EC" FromRole="Header" ToRole="User" />
+    <Property Name="Status" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
   </EntityType>
   <EntityType Name="Meat">
     <Key>

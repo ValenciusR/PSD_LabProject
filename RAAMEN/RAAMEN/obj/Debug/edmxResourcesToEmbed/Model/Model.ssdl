@@ -17,6 +17,7 @@
     <Property Name="CustomerId" Type="int" Nullable="false" />
     <Property Name="StaffId" Type="int" Nullable="false" />
     <Property Name="Date" Type="date" Nullable="false" />
+    <Property Name="Status" Type="varchar" MaxLength="50" Nullable="false" />
   </EntityType>
   <EntityType Name="Meat">
     <Key>
