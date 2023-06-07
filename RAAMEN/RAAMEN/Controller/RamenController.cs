@@ -10,21 +10,48 @@ namespace RAAMEN.Controller
     public class RamenController
     {
         // insert
-        public static void insertRamen(int meatId, string name, string broth, int price)
+        public static string insertRamen(int meatId, string name, string broth, int price)
         {
-            // validasi...
-
-            RamenHandler.insertRamen(meatId, name, broth, price);
+            if (!name.Contains("Ramen"))
+            {
+                return "Name Must Contain Ramen";
+            }
+            else if (broth.Equals(""))
+            {
+                return "Broth Cannot Be Empty";
+            }
+            else if (price < 3000)
+            {
+                return "Price must be atleast 3000";
+            }
+            else
+            {
+                RamenHandler.insertRamen(meatId, name, broth, price);
+                return "Success";
+            }
         }
 
         // update
-        public static void updateRamen(int id, int meatId, string name, string broth, int price)
+        public static string updateRamen(int id, int meatId, string name, string broth, int price)
         {
-            // validasi...
-
-            RamenHandler.updateRamen(id, meatId, name, broth, price);
+            if (!name.Contains("Ramen"))
+            {
+                return "Name Must Contain Ramen";
+            }
+            else if (broth.Equals(""))
+            {
+                return "Broth Cannot Be Empty";
+            }
+            else if (price < 3000)
+            {
+                return "Price must be atleast 3000";
+            }
+            else
+            {
+                RamenHandler.updateRamen(id, meatId, name, broth, price);
+                return "Success";
+            }
         }
-
         // delete
         public static void deleteRamen(int id)
         {

@@ -25,7 +25,8 @@
             <asp:Label ID="Price" runat="server" Text="Price  : "></asp:Label>
             <asp:TextBox ID="PriceTb" runat="server"></asp:TextBox>
             <br />
-
+            <asp:Label ID="StatusLbl" runat="server" Text=""></asp:Label>
+            <br />
             <asp:Button ID="UpdateBtn" runat="server" Text="Update" OnClick="UpdateBtn_Click1" />
         </div>
     </form>

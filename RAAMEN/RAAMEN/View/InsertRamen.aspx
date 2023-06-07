@@ -19,8 +19,10 @@
             <asp:Label ID="Broth" runat="server" Text="Broth : "></asp:Label>
             <asp:TextBox ID="BrothTb" runat="server"></asp:TextBox>
             <br />
-            <asp:Label ID="Price" runat="server" Text="Price  : "></asp:Label>
+            <asp:Label ID="Price" runat="server" Text="Price : "></asp:Label>
             <asp:TextBox ID="PriceTb" runat="server"></asp:TextBox>
+            <br />
+            <asp:Label ID="StatusLbl" runat="server" Text=""></asp:Label>
             <br />
             <asp:Button ID="InsertBtn" runat="server" Text="Insert" OnClick="InsertBtn_Click" />
         </div>

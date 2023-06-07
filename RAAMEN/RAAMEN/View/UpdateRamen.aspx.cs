@@ -31,8 +31,12 @@ namespace RAAMEN.View
             int meatId = int.Parse(meatIdDDl.SelectedValue);
             string broth = BrothTb.Text;
             int price = int.Parse(PriceTb.Text);
-            RamenController.updateRamen(id, meatId, name, broth, price);
-            Response.Redirect("/View/ManageRamen.aspx");
+            String result = RamenController.updateRamen(id, meatId, name, broth, price);
+            StatusLbl.Text = result;
+            if (result == "Success")
+            {
+                Response.Redirect("/View/ManageRamen.aspx");
+            }
         }
     }
 }
