@@ -24,6 +24,7 @@ namespace RAAMEN.Model
         public int CustomerId { get; set; }
         public int StaffId { get; set; }
         public System.DateTime Date { get; set; }
+        public string Status { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Detail> Details { get; set; }
