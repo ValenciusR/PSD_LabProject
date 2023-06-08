@@ -17,6 +17,12 @@ namespace RAAMEN.Repository
             db.SaveChanges();
         }
 
+        public static void makeDetailTransaction(Detail detail)
+        {
+            db.Details.Add(detail);
+            db.SaveChanges();
+        }
+
         //Handle Transaction
         public static void handleTransaction(int id)
         {
@@ -32,13 +38,16 @@ namespace RAAMEN.Repository
             db.SaveChanges();
         }
 
-        //get transaction by transaction id
         public static Header getHeaderById(int id)
         {
             return db.Headers.Find(id);
         }
 
-        //get all ramen order history (admin)
+
+        public static void makeDetailTransaction()
+        {
+
+        }
         public static List<Header> getAllTransaction()
         {
             return db.Headers.ToList();

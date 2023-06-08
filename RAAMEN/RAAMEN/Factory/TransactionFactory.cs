@@ -17,5 +17,14 @@ namespace RAAMEN.Factory
             return header;
         }
 
+        public static Detail makeDetailTransaction(int id, int rId, int qty)
+        {
+            Detail detail = new Detail();
+            detail.HeaderId = id;
+            detail.RamenId = rId;
+            detail.Quantity = qty;
+            return detail;
+        }
+
     }
 }

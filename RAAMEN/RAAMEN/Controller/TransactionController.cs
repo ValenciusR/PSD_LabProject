@@ -9,9 +9,9 @@ namespace RAAMEN.Controller
 {
     public class TransactionController
     {
-        public static void makeTransaction(int customerId)
+        public static void makeTransaction(int customerId, int[] ramenId, int[] ramenQty, int count)
         {
-            TransactionHandler.makeTransaction(customerId);
+            TransactionHandler.makeTransaction(customerId, ramenId, ramenQty, count);
         }
 
         public static void handleTransaction(int id)

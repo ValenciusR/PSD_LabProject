@@ -24,6 +24,51 @@ namespace RAAMEN.View.Member
         protected global::System.Web.UI.WebControls.GridView RamenView;
 
         /// <summary>
+        /// ramenLbl control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label ramenLbl;
+
+        /// <summary>
+        /// ramenId control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox ramenId;
+
+        /// <summary>
+        /// QuantityLbl control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label QuantityLbl;
+
+        /// <summary>
+        /// ramenQty control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox ramenQty;
+
+        /// <summary>
+        /// AddBtn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button AddBtn;
+
+        /// <summary>
         /// OrderBtn control.
         /// </summary>
         /// <remarks>
