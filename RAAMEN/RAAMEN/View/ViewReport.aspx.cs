@@ -1,4 +1,5 @@
 ﻿
+using CrystalDecisions.CrystalReports.Engine;
 using RAAMEN.Model;
 using RAAMEN.Report;
 using System;
@@ -27,12 +28,11 @@ namespace RAAMEN.View
 
         private DataSet getData(List<Header> headers)
         {
-            ReportDocument rd = new ReportDocument();
-            
-
             DataSet data = new DataSet();
             var headerTable = data.Header;
             var detailTable = data.Detail;
+            
+
             
             foreach(Header h in headers)
             {
@@ -43,15 +43,17 @@ namespace RAAMEN.View
                 headerRow["Date"] = h.Date;
                 headerRow["Status"] = h.Status;
                 headerTable.Rows.Add(headerRow);
-                foreach(Detail d in h.Details)
+                
+                foreach (Detail d in h.Details)
                 {
                     var detailRow = detailTable.NewRow();
                     detailRow["HeaderId"] = d.HeaderId;
                     detailRow["RamenId"] = d.RamenId;
                     detailRow["Quantity"] = d.Quantity;
+                    detailRow["Price"] = d.Raman.Price * d.Quantity;
                     detailTable.Rows.Add(detailRow);
-                    ((CrystalDecisions.CrystalReports.Engine.TextObject)rd.ReportDefinition.ReportObjects["UnboundString1"]).Text = "12";
                 }
+                
             }
             return data;
         }
