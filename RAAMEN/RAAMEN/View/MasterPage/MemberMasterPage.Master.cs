@@ -15,27 +15,35 @@ namespace RAAMEN.View.MasterPage
 
         }
 
+        protected void HomeBtn_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("MemberHome.aspx");
+        }
+
         protected void OrderBtn_Click(object sender, EventArgs e)
         {
-            // Response.Redirect("");
+            Response.Redirect("OrderRamen.aspx");
         }
 
         protected void HistoryBtn_Click(object sender, EventArgs e)
         {
-            // Response.Redirect("");
+            Response.Redirect("../History.aspx");
         }
 
         protected void ProfileBtn_Click(object sender, EventArgs e)
         {
-            Response.Redirect("../Profile.aspx");
+            Response.Redirect("ProfileMember.aspx");
         }
 
         protected void LogoutBtn_Click(object sender, EventArgs e)
         {
             FormsAuthentication.SignOut();
             HttpCookie cookie = Request.Cookies["DataUser"];
-            cookie.Expires = DateTime.Now.AddDays(-1);
-            Response.Cookies.Add(cookie);
+            if (cookie != null)
+            {
+                cookie.Expires = DateTime.Now.AddDays(-1);
+                Response.Cookies.Add(cookie);
+            }
             Session.Clear();
             Response.Redirect("../Login.aspx");
         }

@@ -21,7 +21,7 @@ namespace RAAMEN.View.MasterPage
 
         protected void ManageBtn_Click(object sender, EventArgs e)
         {
-            Response.Redirect("../ManageRamen.aspx");
+            Response.Redirect("ManageRamenAdmin.aspx");
         }
 
         protected void QueueBtn_Click(object sender, EventArgs e)
@@ -31,15 +31,18 @@ namespace RAAMEN.View.MasterPage
 
         protected void ProfileBtn_Click(object sender, EventArgs e)
         {
-            Response.Redirect("../Profile.aspx");
+            Response.Redirect("ProfileStaff.aspx");
         }
 
         protected void LogoutBtn_Click(object sender, EventArgs e)
         {
             FormsAuthentication.SignOut();
             HttpCookie cookie = Request.Cookies["DataUser"];
-            cookie.Expires = DateTime.Now.AddDays(-1);
-            Response.Cookies.Add(cookie);
+            if (cookie != null)
+            {
+                cookie.Expires = DateTime.Now.AddDays(-1);
+                Response.Cookies.Add(cookie);
+            }
             Session.Clear();
             Response.Redirect("../Login.aspx");
         }

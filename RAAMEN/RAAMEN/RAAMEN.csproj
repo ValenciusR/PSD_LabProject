@@ -659,17 +659,28 @@
       <LastGenOutput>Model.cs</LastGenOutput>
     </Content>
     <Content Include="View\Admin\AdminHome.aspx" />
+    <Content Include="View\Admin\HistoryAdmin.aspx" />
+    <Content Include="View\Admin\InsertRamenAdmin.aspx" />
+    <Content Include="View\Admin\ManageRamenAdmin.aspx" />
+    <Content Include="View\Admin\ProfileAdmin.aspx" />
+    <Content Include="View\Admin\UpdateRamenAdmin.aspx" />
+    <Content Include="View\Admin\ViewReport.aspx" />
     <Content Include="View\History.aspx" />
     <Content Include="View\InsertRamen.aspx" />
     <Content Include="View\Login.aspx" />
     <Content Include="View\ManageRamen.aspx" />
+    <Content Include="View\Member\HistoryMember.aspx" />
     <Content Include="View\Member\MemberHome.aspx" />
-    <Content Include="View\OrderRamen.aspx" />
+    <Content Include="View\Member\OrderRamen.aspx" />
+    <Content Include="View\Member\ProfileMember.aspx" />
     <Content Include="View\Profile.aspx" />
     <Content Include="View\Register.aspx" />
+    <Content Include="View\Staff\InsertRamenStaff.aspx" />
+    <Content Include="View\Staff\ManageRamenStaff.aspx" />
+    <Content Include="View\Staff\ProfileStaff.aspx" />
     <Content Include="View\Staff\StaffHome.aspx" />
+    <Content Include="View\Staff\UpdateRamenStaff.aspx" />
     <Content Include="View\UpdateRamen.aspx" />
-    <Content Include="View\ViewReport.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -737,6 +748,48 @@
     <Compile Include="View\Admin\AdminHome.aspx.designer.cs">
       <DependentUpon>AdminHome.aspx</DependentUpon>
     </Compile>
+    <Compile Include="View\Admin\HistoryAdmin.aspx.cs">
+      <DependentUpon>HistoryAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Admin\HistoryAdmin.aspx.designer.cs">
+      <DependentUpon>HistoryAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Admin\InsertRamenAdmin.aspx.cs">
+      <DependentUpon>InsertRamenAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Admin\InsertRamenAdmin.aspx.designer.cs">
+      <DependentUpon>InsertRamenAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Admin\ManageRamenAdmin.aspx.cs">
+      <DependentUpon>ManageRamenAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Admin\ManageRamenAdmin.aspx.designer.cs">
+      <DependentUpon>ManageRamenAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Admin\ProfileAdmin.aspx.cs">
+      <DependentUpon>ProfileAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Admin\ProfileAdmin.aspx.designer.cs">
+      <DependentUpon>ProfileAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Admin\UpdateRamenAdmin.aspx.cs">
+      <DependentUpon>UpdateRamenAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Admin\UpdateRamenAdmin.aspx.designer.cs">
+      <DependentUpon>UpdateRamenAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Admin\ViewReport.aspx.cs">
+      <DependentUpon>ViewReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Admin\ViewReport.aspx.designer.cs">
+      <DependentUpon>ViewReport.aspx</DependentUpon>
+    </Compile>
     <Compile Include="View\History.aspx.cs">
       <DependentUpon>History.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -786,6 +839,13 @@
     <Compile Include="View\MasterPage\StaffMasterPage.Master.designer.cs">
       <DependentUpon>StaffMasterPage.Master</DependentUpon>
     </Compile>
+    <Compile Include="View\Member\HistoryMember.aspx.cs">
+      <DependentUpon>HistoryMember.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Member\HistoryMember.aspx.designer.cs">
+      <DependentUpon>HistoryMember.aspx</DependentUpon>
+    </Compile>
     <Compile Include="View\Member\MemberHome.aspx.cs">
       <DependentUpon>MemberHome.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -793,12 +853,19 @@
     <Compile Include="View\Member\MemberHome.aspx.designer.cs">
       <DependentUpon>MemberHome.aspx</DependentUpon>
     </Compile>
-    <Compile Include="View\OrderRamen.aspx.cs">
+    <Compile Include="View\Member\OrderRamen.aspx.cs">
       <DependentUpon>OrderRamen.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="View\OrderRamen.aspx.designer.cs">
+    <Compile Include="View\Member\OrderRamen.aspx.designer.cs">
       <DependentUpon>OrderRamen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Member\ProfileMember.aspx.cs">
+      <DependentUpon>ProfileMember.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Member\ProfileMember.aspx.designer.cs">
+      <DependentUpon>ProfileMember.aspx</DependentUpon>
     </Compile>
     <Compile Include="View\Profile.aspx.cs">
       <DependentUpon>Profile.aspx</DependentUpon>
@@ -814,6 +881,27 @@
     <Compile Include="View\Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
+    <Compile Include="View\Staff\InsertRamenStaff.aspx.cs">
+      <DependentUpon>InsertRamenStaff.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Staff\InsertRamenStaff.aspx.designer.cs">
+      <DependentUpon>InsertRamenStaff.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Staff\ManageRamenStaff.aspx.cs">
+      <DependentUpon>ManageRamenStaff.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Staff\ManageRamenStaff.aspx.designer.cs">
+      <DependentUpon>ManageRamenStaff.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Staff\ProfileStaff.aspx.cs">
+      <DependentUpon>ProfileStaff.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Staff\ProfileStaff.aspx.designer.cs">
+      <DependentUpon>ProfileStaff.aspx</DependentUpon>
+    </Compile>
     <Compile Include="View\Staff\StaffHome.aspx.cs">
       <DependentUpon>StaffHome.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -821,19 +909,19 @@
     <Compile Include="View\Staff\StaffHome.aspx.designer.cs">
       <DependentUpon>StaffHome.aspx</DependentUpon>
     </Compile>
+    <Compile Include="View\Staff\UpdateRamenStaff.aspx.cs">
+      <DependentUpon>UpdateRamenStaff.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Staff\UpdateRamenStaff.aspx.designer.cs">
+      <DependentUpon>UpdateRamenStaff.aspx</DependentUpon>
+    </Compile>
     <Compile Include="View\UpdateRamen.aspx.cs">
       <DependentUpon>UpdateRamen.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="View\UpdateRamen.aspx.designer.cs">
       <DependentUpon>UpdateRamen.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="View\ViewReport.aspx.cs">
-      <DependentUpon>ViewReport.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="View\ViewReport.aspx.designer.cs">
-      <DependentUpon>ViewReport.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

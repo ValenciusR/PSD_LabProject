@@ -19,12 +19,12 @@ namespace RAAMEN.View.Admin
                 Response.Redirect("../Login.aspx");
                 return;
             }
-            else if (Convert.ToInt32(cookie["Role"]) == 3)
+            else if (Convert.ToInt32(Session["UserRole"]) == 3)
             {
                 Response.Redirect("../Member/MemberHome.aspx");
                 return;
             }
-            else if (Convert.ToInt32(cookie["Role"]) == 2)
+            else if (Convert.ToInt32(Session["UserRole"]) == 2)
             {
                 Response.Redirect("../Staff/StaffHome.aspx");
                 return;
