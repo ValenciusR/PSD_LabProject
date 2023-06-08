@@ -14,6 +14,20 @@ namespace RAAMEN.Controller
             TransactionHandler.makeTransaction(customerId);
         }
 
+        public static void handleTransaction(int id)
+        {
+            Header header = TransactionHandler.getHeaderById(id);
+            if (header.Status.Equals("Handled"))
+            {
+                TransactionHandler.unhandleTransaction(id);
+            }
+            else
+            {
+                TransactionHandler.handleTransaction(id);
+            }
+            
+        }
+
         public static List<Header> getAllTransaction()
         {
             return TransactionHandler.getAllTransaction();

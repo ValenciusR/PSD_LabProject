@@ -676,6 +676,7 @@
     <Content Include="View\Staff\ProfileStaff.aspx" />
     <Content Include="View\Staff\StaffHome.aspx" />
     <Content Include="View\Staff\UpdateRamenStaff.aspx" />
+    <Content Include="View\TransactionQueue.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -882,6 +883,13 @@
     </Compile>
     <Compile Include="View\Staff\UpdateRamenStaff.aspx.designer.cs">
       <DependentUpon>UpdateRamenStaff.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\TransactionQueue.aspx.cs">
+      <DependentUpon>TransactionQueue.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\TransactionQueue.aspx.designer.cs">
+      <DependentUpon>TransactionQueue.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

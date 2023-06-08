@@ -17,6 +17,27 @@ namespace RAAMEN.Repository
             db.SaveChanges();
         }
 
+        //Handle Transaction
+        public static void handleTransaction(int id)
+        {
+            Header header = getHeaderById(id);
+            header.Status = "Handled";
+            db.SaveChanges();
+        }
+
+        public static void unhandleTransaction(int id)
+        {
+            Header header = getHeaderById(id);
+            header.Status = "Unhandled";
+            db.SaveChanges();
+        }
+
+        //get transaction by transaction id
+        public static Header getHeaderById(int id)
+        {
+            return db.Headers.Find(id);
+        }
+
         //get all ramen order history (admin)
         public static List<Header> getAllTransaction()
         {

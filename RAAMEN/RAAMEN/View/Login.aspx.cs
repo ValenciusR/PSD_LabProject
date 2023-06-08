@@ -15,7 +15,7 @@ namespace RAAMEN.View
         protected void Page_Load(object sender, EventArgs e)
         {
             HttpCookie cookie = Request.Cookies["DataUser"];
-            if (Session["User"] == null || cookie != null)
+            if (Session["User"] != null || cookie != null)
             {
                 if (Convert.ToInt32(cookie["Role"]) == 1)
                 {

@@ -16,6 +16,20 @@ namespace RAAMEN.Handler
             TransactionRepository.makeTransaction(header);
         }
 
+        public static void handleTransaction(int id)
+        {
+            TransactionRepository.handleTransaction(id);
+        }
+
+        public static void unhandleTransaction(int id)
+        {
+            TransactionRepository.unhandleTransaction(id);
+        }
+        public static Header getHeaderById(int id)
+        {
+            return TransactionRepository.getHeaderById(id);
+        }
+
         public static List<Header> getAllTransaction()
         {
             return TransactionRepository.getAllTransaction();
