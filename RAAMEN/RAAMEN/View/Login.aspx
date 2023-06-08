@@ -18,7 +18,8 @@
             <asp:CheckBox ID="RememberMeCheckBox" runat="server" Text="Remember Me"/><br />
 
             <asp:Label ID="status" runat="server" Text=""></asp:Label><br />
-            <asp:Button ID="LoginBtn" runat="server" Text="Login" OnClick="LoginBtn_Click" />
+            <asp:Button ID="LoginBtn" runat="server" Text="Login" OnClick="LoginBtn_Click" /><br />
+            <asp:LinkButton ID="RegisterLink" runat="server" OnClick="RegisterLink_Click">Don't have an account yet? Register..</asp:LinkButton>
         </div>
     </form>
 </body>

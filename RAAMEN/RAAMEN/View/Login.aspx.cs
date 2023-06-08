@@ -14,7 +14,25 @@ namespace RAAMEN.View
         private DatabaseEntities db = new DatabaseEntities();
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            HttpCookie cookie = Request.Cookies["DataUser"];
+            if (cookie != null)
+            {
+                if (Convert.ToInt32(cookie["Role"]) == 1)
+                {
+                    Response.Redirect("Admin/AdminHome.aspx");
+                    return;
+                }
+                else if (Convert.ToInt32(cookie["Role"]) == 2)
+                {
+                    Response.Redirect("Staff/StaffHome.aspx");
+                    return;
+                }
+                else if (Convert.ToInt32(cookie["Role"]) == 3)
+                {
+                    Response.Redirect("Member/MemberHome.aspx");
+                    return;
+                }
+            }
         }
 
         protected void LoginBtn_Click(object sender, EventArgs e)
@@ -54,6 +72,11 @@ namespace RAAMEN.View
             {
                 status.Text = "Username or password is incorrect";
             }
+        }
+
+        protected void RegisterLink_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Register.aspx");
         }
     }
 }

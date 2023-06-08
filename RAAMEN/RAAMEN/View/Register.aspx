@@ -26,7 +26,8 @@
             <asp:TextBox ID="ConfirmTxb" runat="server" TextMode="Password"></asp:TextBox><br />
 
             <asp:Label ID="status" runat="server" Text=""></asp:Label><br />
-            <asp:Button ID="RegisterBtn" runat="server" Text="Register" OnClick="RegisterBtn_Click"/>
+            <asp:Button ID="RegisterBtn" runat="server" Text="Register" OnClick="RegisterBtn_Click"/><br />
+            <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">Already have an accout? Login..</asp:LinkButton>
         </div>
     </form>
 </body>
