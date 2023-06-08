@@ -41,7 +41,7 @@ namespace RAAMEN.View.MasterPage
 
         protected void QueueBtn_Click(object sender, EventArgs e)
         {
-            // Response.Redirect("nama_file.aspx");
+            Response.Redirect("TransactionQueueAdmin.aspx");
         }
 
         protected void ProfileBtn_Click(object sender, EventArgs e)

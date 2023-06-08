@@ -663,6 +663,7 @@
     <Content Include="View\Admin\InsertRamenAdmin.aspx" />
     <Content Include="View\Admin\ManageRamenAdmin.aspx" />
     <Content Include="View\Admin\ProfileAdmin.aspx" />
+    <Content Include="View\Admin\TransactionQueueAdmin.aspx" />
     <Content Include="View\Admin\UpdateRamenAdmin.aspx" />
     <Content Include="View\Admin\ViewReport.aspx" />
     <Content Include="View\Login.aspx" />
@@ -675,6 +676,7 @@
     <Content Include="View\Staff\ManageRamenStaff.aspx" />
     <Content Include="View\Staff\ProfileStaff.aspx" />
     <Content Include="View\Staff\StaffHome.aspx" />
+    <Content Include="View\Staff\TransactionQueueStaff.aspx" />
     <Content Include="View\Staff\UpdateRamenStaff.aspx" />
     <Content Include="View\TransactionQueue.aspx" />
     <Content Include="Web.config" />
@@ -771,6 +773,13 @@
     </Compile>
     <Compile Include="View\Admin\ProfileAdmin.aspx.designer.cs">
       <DependentUpon>ProfileAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Admin\TransactionQueueAdmin.aspx.cs">
+      <DependentUpon>TransactionQueueAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Admin\TransactionQueueAdmin.aspx.designer.cs">
+      <DependentUpon>TransactionQueueAdmin.aspx</DependentUpon>
     </Compile>
     <Compile Include="View\Admin\UpdateRamenAdmin.aspx.cs">
       <DependentUpon>UpdateRamenAdmin.aspx</DependentUpon>
@@ -876,6 +885,13 @@
     </Compile>
     <Compile Include="View\Staff\StaffHome.aspx.designer.cs">
       <DependentUpon>StaffHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Staff\TransactionQueueStaff.aspx.cs">
+      <DependentUpon>TransactionQueueStaff.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Staff\TransactionQueueStaff.aspx.designer.cs">
+      <DependentUpon>TransactionQueueStaff.aspx</DependentUpon>
     </Compile>
     <Compile Include="View\Staff\UpdateRamenStaff.aspx.cs">
       <DependentUpon>UpdateRamenStaff.aspx</DependentUpon>
