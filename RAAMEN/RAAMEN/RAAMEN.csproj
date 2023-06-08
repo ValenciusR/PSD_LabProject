@@ -665,22 +665,17 @@
     <Content Include="View\Admin\ProfileAdmin.aspx" />
     <Content Include="View\Admin\UpdateRamenAdmin.aspx" />
     <Content Include="View\Admin\ViewReport.aspx" />
-    <Content Include="View\History.aspx" />
-    <Content Include="View\InsertRamen.aspx" />
     <Content Include="View\Login.aspx" />
-    <Content Include="View\ManageRamen.aspx" />
     <Content Include="View\Member\HistoryMember.aspx" />
     <Content Include="View\Member\MemberHome.aspx" />
     <Content Include="View\Member\OrderRamen.aspx" />
     <Content Include="View\Member\ProfileMember.aspx" />
-    <Content Include="View\Profile.aspx" />
     <Content Include="View\Register.aspx" />
     <Content Include="View\Staff\InsertRamenStaff.aspx" />
     <Content Include="View\Staff\ManageRamenStaff.aspx" />
     <Content Include="View\Staff\ProfileStaff.aspx" />
     <Content Include="View\Staff\StaffHome.aspx" />
     <Content Include="View\Staff\UpdateRamenStaff.aspx" />
-    <Content Include="View\UpdateRamen.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -790,33 +785,12 @@
     <Compile Include="View\Admin\ViewReport.aspx.designer.cs">
       <DependentUpon>ViewReport.aspx</DependentUpon>
     </Compile>
-    <Compile Include="View\History.aspx.cs">
-      <DependentUpon>History.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="View\History.aspx.designer.cs">
-      <DependentUpon>History.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="View\InsertRamen.aspx.cs">
-      <DependentUpon>InsertRamen.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="View\InsertRamen.aspx.designer.cs">
-      <DependentUpon>InsertRamen.aspx</DependentUpon>
-    </Compile>
     <Compile Include="View\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="View\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="View\ManageRamen.aspx.cs">
-      <DependentUpon>ManageRamen.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="View\ManageRamen.aspx.designer.cs">
-      <DependentUpon>ManageRamen.aspx</DependentUpon>
     </Compile>
     <Compile Include="View\MasterPage\AdminMasterPage.Master.cs">
       <DependentUpon>AdminMasterPage.Master</DependentUpon>
@@ -867,13 +841,6 @@
     <Compile Include="View\Member\ProfileMember.aspx.designer.cs">
       <DependentUpon>ProfileMember.aspx</DependentUpon>
     </Compile>
-    <Compile Include="View\Profile.aspx.cs">
-      <DependentUpon>Profile.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="View\Profile.aspx.designer.cs">
-      <DependentUpon>Profile.aspx</DependentUpon>
-    </Compile>
     <Compile Include="View\Register.aspx.cs">
       <DependentUpon>Register.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -915,13 +882,6 @@
     </Compile>
     <Compile Include="View\Staff\UpdateRamenStaff.aspx.designer.cs">
       <DependentUpon>UpdateRamenStaff.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="View\UpdateRamen.aspx.cs">
-      <DependentUpon>UpdateRamen.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="View\UpdateRamen.aspx.designer.cs">
-      <DependentUpon>UpdateRamen.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

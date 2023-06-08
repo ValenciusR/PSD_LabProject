@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RAAMEN.Controller;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,7 +12,9 @@ namespace RAAMEN.View.Admin
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            int userRole = (int)Session["UserRole"];
+            AdminHistory.DataSource = TransactionController.getAllTransaction();
+            AdminHistory.DataBind();
         }
     }
 }

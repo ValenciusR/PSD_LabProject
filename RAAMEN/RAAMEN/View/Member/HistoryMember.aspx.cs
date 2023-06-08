@@ -11,7 +11,8 @@ namespace RAAMEN.View.Member
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            CustomerHistory.DataSource = null;
+            //kurang bikin getTransactionByCustomerId
         }
     }
 }

@@ -12,7 +12,22 @@ namespace RAAMEN.View.MasterPage
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            HttpCookie cookie = Request.Cookies["DataUser"];
+            if (Session["User"] == null && cookie == null)
+            {
+                Response.Redirect("../Login.aspx");
+                return;
+            }
+            else if (Convert.ToInt32(Session["UserRole"]) == 3)
+            {
+                Response.Redirect("../Member/MemberHome.aspx");
+                return;
+            }
+            else if (Convert.ToInt32(Session["UserRole"]) == 2)
+            {
+                Response.Redirect("../Staff/StaffHome.aspx");
+                return;
+            }
         }
         protected void HomeBtn_Click(object sender, EventArgs e)
         {
@@ -36,7 +51,7 @@ namespace RAAMEN.View.MasterPage
 
         protected void HistoryBtn_Click(object sender, EventArgs e)
         {
-            Response.Redirect("../History.aspx");
+            Response.Redirect("HistoryAdmin.aspx");
         }
         protected void ReportBtn_Click(object sender, EventArgs e)
         {

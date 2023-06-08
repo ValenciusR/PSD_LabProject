@@ -12,7 +12,22 @@ namespace RAAMEN.View.MasterPage
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            HttpCookie cookie = Request.Cookies["DataUser"];
+            if (Session["User"] == null && cookie == null)
+            {
+                Response.Redirect("../Login.aspx");
+                return;
+            }
+            else if (Convert.ToInt32(Session["UserRole"]) == 1)
+            {
+                Response.Redirect("../Admin/AdminHome.aspx");
+                return;
+            }
+            else if (Convert.ToInt32(Session["UserRole"]) == 3)
+            {
+                Response.Redirect("../Member/MemberHome.aspx");
+                return;
+            }
         }
         protected void HomeBtn_Click(object sender, EventArgs e)
         {
