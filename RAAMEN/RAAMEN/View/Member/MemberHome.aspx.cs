@@ -31,17 +31,7 @@ namespace RAAMEN.View.Member
             }
 
             // Kalau butuh data user dari session
-            User user;
-            if (Session["User"] == null)
-            {
-                var id = Convert.ToInt32(cookie["UserId"]);
-                user = (from u in db.Users where u.Id.Equals(id) select u).FirstOrDefault();
-                Session["User"] = user;
-            }
-            else
-            {
-                user = (User)Session["User"];
-            }
+            User user = (User)Session["User"];
             NameLbl.Text = user.Username;
         }
     }

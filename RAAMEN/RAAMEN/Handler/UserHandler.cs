@@ -16,9 +16,9 @@ namespace RAAMEN.Handler
             UserRepository.InsertUser(user);
         }
 
-        public static void UpdateUser(int id, string name, string email, string gender)
+        public static void UpdateUser(int id, string name, string email, string gender, string password)
         {
-            UserRepository.UpdateUser(id, name, email, gender);
+            UserRepository.UpdateUser(id, name, email, gender, password);
         }
 
         public static bool isPasswordInvalid(int id, string pass)

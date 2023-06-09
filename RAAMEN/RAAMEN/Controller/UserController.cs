@@ -42,7 +42,7 @@ namespace RAAMEN.Controller
         }
 
 
-        public static string UpdateUser(int id, string name, string email, string gender, string password)
+        public static string UpdateUser(int id, string name, string email, string gender, string password, string old_password)
         {
             string result = "";
             if (name == "" || email == "" || password == "")
@@ -61,13 +61,14 @@ namespace RAAMEN.Controller
             {
                 result = "Gender must be choosen";
             }
-            else if (UserHandler.isPasswordInvalid(id, password))
+            else if (UserHandler.isPasswordInvalid(id, old_password))
             {
                 result = "Password invalid";
             }
             else
             {
-                UserHandler.UpdateUser(id, name, email, gender);
+                UserHandler.UpdateUser(id, name, email, gender, password);
+                result = "User update success!";
             }
 
             return result;

@@ -96,6 +96,24 @@ namespace RAAMEN.View.Admin
         protected global::System.Web.UI.WebControls.TextBox PassTxb;
 
         /// <summary>
+        /// OldPassLbl control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label OldPassLbl;
+
+        /// <summary>
+        /// OldPassTxb control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox OldPassTxb;
+
+        /// <summary>
         /// status control.
         /// </summary>
         /// <remarks>

@@ -1,4 +1,5 @@
 ﻿using RAAMEN.Controller;
+using RAAMEN.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,6 +11,7 @@ namespace RAAMEN.View.Staff
 {
     public partial class ProfileStaff : System.Web.UI.Page
     {
+        private DatabaseEntities db = new DatabaseEntities();
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -17,7 +19,7 @@ namespace RAAMEN.View.Staff
 
         protected void UpdateBtn_Click(object sender, EventArgs e)
         {
-            int id = (int)Session["UserId"];
+            int id = Convert.ToInt32(Session["UserId"]);
             string name = NameTxb.Text;
             string email = EmailTxb.Text;
             string gender = "";
@@ -30,7 +32,16 @@ namespace RAAMEN.View.Staff
                 gender = RadioFemale.Text;
             }
             string pass = PassTxb.Text;
-            status.Text = UserController.UpdateUser(id, name, email, gender, pass);
+            string oldpass = OldPassTxb.Text;
+            status.Text = UserController.UpdateUser(id, name, email, gender, pass, oldpass);
+
+            if (status.Text == "User update success!")
+            {
+                User user = (from u in db.Users where u.Id.Equals(id) select u).FirstOrDefault();
+                Session["User"] = user;
+                Session["UserRole"] = user.RoleId;
+                Session["UserId"] = user.Id;
+            }
         }
     }
 }

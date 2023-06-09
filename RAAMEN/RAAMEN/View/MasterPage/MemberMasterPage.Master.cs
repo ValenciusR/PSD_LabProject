@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RAAMEN.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -10,6 +11,7 @@ namespace RAAMEN.View.MasterPage
 {
     public partial class MemberMasterPage : System.Web.UI.MasterPage
     {
+        private DatabaseEntities db = new DatabaseEntities();
         protected void Page_Load(object sender, EventArgs e)
         {
             HttpCookie cookie = Request.Cookies["DataUser"];
@@ -27,6 +29,18 @@ namespace RAAMEN.View.MasterPage
             {
                 Response.Redirect("../Staff/StaffHome.aspx");
                 return;
+            }
+
+            User user;
+            if (Session["User"] == null)
+            {
+                var id = Convert.ToInt32(cookie["UserId"]);
+                user = (from u in db.Users where u.Id.Equals(id) select u).FirstOrDefault();
+                Session["User"] = user;
+            }
+            else
+            {
+                user = (User)Session["User"];
             }
         }
 

@@ -13,8 +13,11 @@
         <asp:RadioButton ID="RadioMale" runat="server" Text="Male" GroupName="Gender"/>
         <asp:RadioButton ID="RadioFemale" runat="server" Text="Female" GroupName="Gender"/><br />
             
-        <asp:Label ID="PassLbl" runat="server" Text="Password"></asp:Label>
+        <asp:Label ID="PassLbl" runat="server" Text="New Password"></asp:Label>
         <asp:TextBox ID="PassTxb" runat="server" TextMode="Password"></asp:TextBox><br />
+
+        <asp:Label ID="OldPassLbl" runat="server" Text="Confirm with Old Password"></asp:Label>
+        <asp:TextBox ID="OldPassTxb" runat="server" TextMode="Password"></asp:TextBox><br />
 
         <asp:Label ID="status" runat="server" Text=""></asp:Label><br />
         <asp:Button ID="UpdateBtn" runat="server" Text="Update Profile" OnClick="UpdateBtn_Click"/>

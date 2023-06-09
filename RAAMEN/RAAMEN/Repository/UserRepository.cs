@@ -16,12 +16,13 @@ namespace RAAMEN.Repository
             db.SaveChanges();
         }
 
-        public static void UpdateUser(int id, string name, string email, string gender)
+        public static void UpdateUser(int id, string name, string email, string gender, string password)
         {
             User user = db.Users.Find(id);
             user.Username = name;
             user.Email = email;
             user.Gender = gender;
+            user.Password = password;
             db.SaveChanges();
         }
 

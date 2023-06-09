@@ -11,8 +11,8 @@ namespace RAAMEN.View.Member
 {
     public partial class OrderRamen : System.Web.UI.Page
     {
-        public static int[] ramenIdArr;
-        public static int[] ramenQtyArr;
+        public static int[] ramenIdArr = new int[400];
+        public static int[] ramenQtyArr = new int[400];
         int globalCountOrder = 0;
         protected void Page_Load(object sender, EventArgs e)
         {
