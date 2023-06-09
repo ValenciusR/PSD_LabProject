@@ -13,7 +13,7 @@ namespace RAAMEN.Factory
             Header header = new Header();
             header.CustomerId = customerId;
             header.Date = DateTime.Today;
-            header.Status = "unhandled";
+            header.Status = "Unhandled";
             return header;
         }
 

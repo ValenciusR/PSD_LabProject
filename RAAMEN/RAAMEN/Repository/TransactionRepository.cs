@@ -43,21 +43,25 @@ namespace RAAMEN.Repository
             return db.Headers.Find(id);
         }
 
-
-        public static void makeDetailTransaction()
-        {
-
-        }
         public static List<Header> getAllTransaction()
         {
             return db.Headers.ToList();
         }
 
-        //get transaction by user id
-        public static List<Header> getTransactionByCustomerId(int customerId)
+        public static List<Header> getAllTransactionByCustomerId(int customerId)
         {
             //INI PERLU DISELEKSI BASED ON ID USER
-            return db.Headers.ToList();
+            List<Header> allHeadersData = db.Headers.ToList();
+
+            List<Header> allCustomerData = new List<Header>();
+            foreach(Header head in allHeadersData)
+            {
+                if(head.CustomerId == customerId)
+                {
+                    allCustomerData.Add(head);
+                }
+            }
+            return allCustomerData; 
         }
     }
 }

@@ -1,6 +1,7 @@
 ﻿using RAAMEN.Handler;
 using RAAMEN.Model;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -9,9 +10,9 @@ namespace RAAMEN.Controller
 {
     public class TransactionController
     {
-        public static void makeTransaction(int customerId, int[] ramenId, int[] ramenQty, int count)
+        public static void makeTransaction(int customerId, ArrayList ramenId, ArrayList ramenQty)
         {
-            TransactionHandler.makeTransaction(customerId, ramenId, ramenQty, count);
+            TransactionHandler.makeTransaction(customerId, ramenId, ramenQty);
         }
 
         public static void handleTransaction(int id)
@@ -33,9 +34,9 @@ namespace RAAMEN.Controller
             return TransactionHandler.getAllTransaction();
         }
 
-        public static List<Header> getTransactionByCustomerId(int customerId)
+        public static List<Header> getAllTransactionByCustomerId(int customerId)
         {
-            return TransactionHandler.getTransactionByCustomerId(customerId);
+            return TransactionHandler.getAllTransactionByCustomerId(customerId);
         }
     }
 }

@@ -3,6 +3,6 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div>
-        <asp:GridView ID="CustomerHistory" runat="server"></asp:GridView>
+        <asp:GridView ID="CustomerHistory" runat="server" AutoGenerateSelectButton="true" OnRowEditing="CustomerHistory_RowEditing"></asp:GridView>
     </div>
 </asp:Content>

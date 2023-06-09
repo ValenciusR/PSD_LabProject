@@ -15,5 +15,13 @@ namespace RAAMEN.View.Admin
             AdminHistory.DataSource = TransactionController.getAllTransaction();
             AdminHistory.DataBind();
         }
+
+        protected void AdminHistory_RowEditing(object sender, GridViewEditEventArgs e)
+        {
+            GridViewRow row = AdminHistory.Rows[e.NewEditIndex];
+            int id = int.Parse(row.Cells[1].Text);
+            //bug -> gabisa return response
+            Response.Redirect("HistoryAdminTransactionDetail.aspx?id="+id);
+        }
     }
 }

@@ -660,6 +660,7 @@
     </Content>
     <Content Include="View\Admin\AdminHome.aspx" />
     <Content Include="View\Admin\HistoryAdmin.aspx" />
+    <Content Include="View\Admin\HistoryAdminTransactionDetail.aspx" />
     <Content Include="View\Admin\InsertRamenAdmin.aspx" />
     <Content Include="View\Admin\ManageRamenAdmin.aspx" />
     <Content Include="View\Admin\ProfileAdmin.aspx" />
@@ -751,6 +752,13 @@
     </Compile>
     <Compile Include="View\Admin\HistoryAdmin.aspx.designer.cs">
       <DependentUpon>HistoryAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Admin\HistoryAdminTransactionDetail.aspx.cs">
+      <DependentUpon>HistoryAdminTransactionDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Admin\HistoryAdminTransactionDetail.aspx.designer.cs">
+      <DependentUpon>HistoryAdminTransactionDetail.aspx</DependentUpon>
     </Compile>
     <Compile Include="View\Admin\InsertRamenAdmin.aspx.cs">
       <DependentUpon>InsertRamenAdmin.aspx</DependentUpon>

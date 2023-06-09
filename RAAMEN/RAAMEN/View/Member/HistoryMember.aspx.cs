@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RAAMEN.Controller;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,8 +12,16 @@ namespace RAAMEN.View.Member
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            CustomerHistory.DataSource = null;
-            //kurang bikin getTransactionByCustomerId
+            int customerId = (int)Session["UserId"];
+            CustomerHistory.DataSource = TransactionController.getAllTransactionByCustomerId(customerId);
+            CustomerHistory.DataBind();
+        }
+
+        protected void CustomerHistory_RowEditing(object sender, GridViewEditEventArgs e)
+        {
+            GridViewRow row = CustomerHistory.Rows[e.NewEditIndex];
+            int id = int.Parse(row.Cells[1].Text);
+            Response.Redirect("MemberHome.aspx");
         }
     }
 }
