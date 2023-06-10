@@ -22,12 +22,6 @@ namespace RAAMEN.View.Member
             RamenView.DataSource = RamenController.getAllRamen();
             RamenView.DataBind();
 
-            rament.DataSource = ramensId;
-            rament.DataBind();
-
-            qtyt.DataSource = ramensQty;
-            qtyt.DataBind();
-
             RamensOrder.DataSource = ramenss;
             RamensOrder.DataBind();
         }
@@ -38,6 +32,7 @@ namespace RAAMEN.View.Member
             TransactionController.makeTransaction(customerId, ramensId, ramensQty);
             ramensId.Clear();
             ramensQty.Clear();
+            ramenss.Clear();
             Response.Redirect("OrderRamen.aspx");
         }
 
