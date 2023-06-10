@@ -5,6 +5,16 @@
     <div>
         <asp:GridView ID="RamenView" runat="server"></asp:GridView>
         <br />
+
+        <asp:GridView ID="RamensOrder" runat="server"></asp:GridView>
+        <br />
+
+        <asp:GridView ID="rament" runat="server"></asp:GridView>
+        <br />
+
+        <asp:GridView ID="qtyt" runat="server"></asp:GridView>
+        <br />
+
         <asp:Label ID="ramenLbl" runat="server" Text="Ramen ID"></asp:Label>
         <br />
         <asp:TextBox ID="ramenId" runat="server"></asp:TextBox>

@@ -858,6 +858,7 @@
     <Compile Include="View\Member\ProfileMember.aspx.designer.cs">
       <DependentUpon>ProfileMember.aspx</DependentUpon>
     </Compile>
+    <Compile Include="View\Member\Ramen.cs" />
     <Compile Include="View\Register.aspx.cs">
       <DependentUpon>Register.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
