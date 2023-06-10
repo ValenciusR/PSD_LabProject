@@ -27,14 +27,14 @@ namespace RAAMEN.Handler
             }
         }
 
-        public static void handleTransaction(int id)
+        public static void handleTransaction(int id, int staffid)
         {
-            TransactionRepository.handleTransaction(id);
+            TransactionRepository.handleTransaction(id,staffid);
         }
 
-        public static void unhandleTransaction(int id)
+        public static void unhandleTransaction(int id, int staffid)
         {
-            TransactionRepository.unhandleTransaction(id);
+            TransactionRepository.unhandleTransaction(id, staffid);
         }
         public static Header getHeaderById(int id)
         {

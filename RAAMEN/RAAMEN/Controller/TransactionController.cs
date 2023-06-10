@@ -15,16 +15,17 @@ namespace RAAMEN.Controller
             TransactionHandler.makeTransaction(customerId, ramenId, ramenQty);
         }
 
-        public static void handleTransaction(int id)
+        public static void handleTransaction(int id,int staffid)
         {
             Header header = TransactionHandler.getHeaderById(id);
             if (header.Status.Equals("Handled"))
             {
-                TransactionHandler.unhandleTransaction(id);
+                TransactionHandler.unhandleTransaction(id,staffid);
+                // update pake staff id yang lagi aktif
             }
             else
             {
-                TransactionHandler.handleTransaction(id);
+                TransactionHandler.handleTransaction(id,staffid);
             }
             
         }

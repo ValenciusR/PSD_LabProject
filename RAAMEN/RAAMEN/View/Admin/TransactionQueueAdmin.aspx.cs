@@ -42,8 +42,10 @@ namespace RAAMEN.View.Admin
         {
             GridViewRow row = TransactionGV.Rows[e.NewEditIndex];
             int id = int.Parse(row.Cells[1].Text);
-            TransactionController.handleTransaction(id);
-            Response.Redirect("TransactionQueue.aspx");
+            int staffid = (int)Session["UserId"];
+
+            TransactionController.handleTransaction(id, staffid);
+            Response.Redirect("TransactionQueueAdmin.aspx");
 
         }
     }

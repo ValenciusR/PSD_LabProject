@@ -23,11 +23,8 @@ namespace RAAMEN.View.Staff
             }
             if (Session["User"] == null)
             {
-                var id = Convert.ToInt32(cookie["UserId"]);
-                user = (from u in db.Users where u.Id.Equals(id) select u).FirstOrDefault();
-                Session["User"] = user;
-                Session["UserRole"] = user.RoleId;
-                Session["UserId"] = user.Id;
+                Response.Redirect("ManageRamenStaff.aspx");
+                return;
             }
             else
             {

@@ -24,16 +24,18 @@ namespace RAAMEN.Repository
         }
 
         //Handle Transaction
-        public static void handleTransaction(int id)
+        public static void handleTransaction(int id, int staffid)
         {
             Header header = getHeaderById(id);
+            header.StaffId = staffid;
             header.Status = "Handled";
             db.SaveChanges();
         }
 
-        public static void unhandleTransaction(int id)
+        public static void unhandleTransaction(int id, int staffid)
         {
             Header header = getHeaderById(id);
+            header.StaffId = staffid;
             header.Status = "Unhandled";
             db.SaveChanges();
         }
