@@ -33,6 +33,15 @@ namespace RAAMEN.View.Member
         protected global::System.Web.UI.WebControls.GridView RamensOrder;
 
         /// <summary>
+        /// ValidationOrder control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label ValidationOrder;
+
+        /// <summary>
         /// ramenLbl control.
         /// </summary>
         /// <remarks>
@@ -69,6 +78,15 @@ namespace RAAMEN.View.Member
         protected global::System.Web.UI.WebControls.TextBox ramenQty;
 
         /// <summary>
+        /// Validation control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Validation;
+
+        /// <summary>
         /// AddBtn control.
         /// </summary>
         /// <remarks>
@@ -76,6 +94,15 @@ namespace RAAMEN.View.Member
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button AddBtn;
+
+        /// <summary>
+        /// ClearCart control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button ClearCart;
 
         /// <summary>
         /// OrderBtn control.

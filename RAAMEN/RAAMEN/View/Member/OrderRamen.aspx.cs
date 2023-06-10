@@ -47,20 +47,46 @@ namespace RAAMEN.View.Member
 
         protected void OrderBtn_Click(object sender, EventArgs e)
         {
-            int customerId = (int)Session["UserId"];
-            TransactionController.makeTransaction(customerId, ramensId, ramensQty);
-            ramensId.Clear();
-            ramensQty.Clear();
-            ramenss.Clear();
-            Response.Redirect("OrderRamen.aspx");
+            if(ramenss.Count == 0)
+            {
+                ValidationOrder.Text = "Order cannot be empty";
+            }
+            else
+            {
+                int customerId = (int)Session["UserId"];
+                TransactionController.makeTransaction(customerId, ramensId, ramensQty);
+                ramensId.Clear();
+                ramensQty.Clear();
+                ramenss.Clear();
+                Response.Redirect("OrderRamen.aspx");
+            }
         }
 
         protected void AddBtn_Click(object sender, EventArgs e)
         {
-            ramensId.Add(int.Parse(ramenId.Text));
-            ramensQty.Add(int.Parse(ramenQty.Text));
-            ramenss.Add(new Ramen(int.Parse(ramenId.Text), int.Parse(ramenQty.Text)));
-            
+            if(ramenId.Text == "")
+            {
+                Validation.Text = "Must input ramen Id";
+            }
+            else if(ramenQty.Text == "")
+            {
+                Validation.Text = "Must input ramen quantity";
+            }
+            else
+            {
+                ramensId.Add(int.Parse(ramenId.Text));
+                ramensQty.Add(int.Parse(ramenQty.Text));
+                ramenss.Add(new Ramen(int.Parse(ramenId.Text), int.Parse(ramenQty.Text)));
+
+                Response.Redirect("OrderRamen.aspx");
+            }
+        }
+
+        protected void ClearCart_Click(object sender, EventArgs e)
+        {
+            ramensId.Clear();
+            ramensQty.Clear();
+            ramenss.Clear();
             Response.Redirect("OrderRamen.aspx");
         }
     }

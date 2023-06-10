@@ -8,6 +8,8 @@
 
         <asp:GridView ID="RamensOrder" runat="server"></asp:GridView>
         <br />
+        <asp:Label ID="ValidationOrder" runat="server" Text=""></asp:Label>
+        <br />
 
         <asp:Label ID="ramenLbl" runat="server" Text="Ramen ID"></asp:Label>
         <br />
@@ -18,7 +20,14 @@
         <br />
         <asp:TextBox ID="ramenQty" runat="server"></asp:TextBox>
         <br />
-        <asp:Button ID="AddBtn" runat="server" Text="Add Ramen" OnClick="AddBtn_Click" />
+
+        <asp:Label ID="Validation" runat="server" Text=""></asp:Label>
+        <br />
+
+        <asp:Button ID="AddBtn" runat="server" Text="Add To Cart" OnClick="AddBtn_Click" />
+        <br />
+        <br />
+        <asp:Button ID="ClearCart" runat="server" Text="Clear Cart" OnClick="ClearCart_Click"/>
         <br />
         <br />
         <asp:Button ID="OrderBtn" runat="server" Text="Order" OnClick="OrderBtn_Click" />
