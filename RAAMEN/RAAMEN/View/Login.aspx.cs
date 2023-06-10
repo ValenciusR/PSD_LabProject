@@ -15,8 +15,39 @@ namespace RAAMEN.View
         protected void Page_Load(object sender, EventArgs e)
         {
             HttpCookie cookie = Request.Cookies["DataUser"];
-            if (Session["User"] != null || cookie != null)
+            if (HttpContext.Current.User.Identity.IsAuthenticated)
             {
+                if (Convert.ToInt32(Session["UserRole"]) == 1)
+                {
+                    Response.Redirect("Admin/AdminHome.aspx");
+                    return;
+                }
+                else if (Convert.ToInt32(Session["UserRole"]) == 2)
+                {
+                    Response.Redirect("Staff/StaffHome.aspx");
+                    return;
+                }
+                else if (Convert.ToInt32(Session["UserRole"]) == 3)
+                {
+                    Response.Redirect("Member/MemberHome.aspx");
+                    return;
+                }
+            }
+            else if(cookie != null)
+            {
+                User user;
+                if (Session["User"] == null)
+                {
+                    var id = Convert.ToInt32(cookie["UserId"]);
+                    user = (from u in db.Users where u.Id.Equals(id) select u).FirstOrDefault();
+                    Session["User"] = user;
+                    Session["UserRole"] = user.RoleId;
+                    Session["UserId"] = user.Id;
+                }
+                else
+                {
+                    user = (User)Session["User"];
+                }
                 if (Convert.ToInt32(cookie["Role"]) == 1)
                 {
                     Response.Redirect("Admin/AdminHome.aspx");
@@ -41,7 +72,6 @@ namespace RAAMEN.View
             bool RememberMe = RememberMeCheckBox.Checked;
             if (user != null)
             {
-
                 Session["User"] = user;
                 Session["UserRole"] = user.RoleId;
                 Session["UserId"] = user.Id;

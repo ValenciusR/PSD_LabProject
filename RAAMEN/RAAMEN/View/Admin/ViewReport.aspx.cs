@@ -15,10 +15,29 @@ namespace RAAMEN.View.Admin
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            DatabaseEntities db = new DatabaseEntities();
+            HttpCookie cookie = Request.Cookies["DataUser"];
+            User user;
+            if (Session["User"] == null && cookie == null)
+            {
+                Response.Redirect("../Login.aspx");
+                return;
+            }
+            else if (Session["User"] == null)
+            {
+                var id = Convert.ToInt32(cookie["UserId"]);
+                user = (from u in db.Users where u.Id.Equals(id) select u).FirstOrDefault();
+                Session["User"] = user;
+                Session["UserRole"] = user.RoleId;
+                Session["UserId"] = user.Id;
+            }
+            else
+            {
+                user = (User)Session["User"];
+            }
             CrystalReport report = new CrystalReport();
             CrystalReportViewer.ReportSource = report;
 
-            DatabaseEntities db = new DatabaseEntities();
             DataSet data = getData((from header in db.Headers select header).ToList());
 
             report.SetDataSource(data);

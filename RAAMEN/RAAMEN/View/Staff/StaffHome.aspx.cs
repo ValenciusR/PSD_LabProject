@@ -1,4 +1,4 @@
-﻿using RAAMEN.Model;
+﻿ using RAAMEN.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,19 +19,22 @@ namespace RAAMEN.View.Staff
                 Response.Redirect("../Login.aspx");
                 return;
             }
-            else if (Convert.ToInt32(Session["UserRole"]) == 1)
-            {
-                Response.Redirect("../Admin/AdminHome.aspx");
-                return;
-            }
-            else if (Convert.ToInt32(Session["UserRole"]) == 3)
-            {
-                Response.Redirect("../Member/MemberHome.aspx");
-                return;
-            }
 
             // Kalau butuh data user dari session
-            User user = (User)Session["User"];
+            User user;
+            if (Session["User"] == null)
+            {
+                var id = Convert.ToInt32(cookie["UserId"]);
+                user = (from u in db.Users where u.Id.Equals(id) select u).FirstOrDefault();
+                Session["User"] = user;
+                Session["UserRole"] = user.RoleId;
+                Session["UserId"] = user.Id;
+            }
+            else
+            {
+                user = (User)Session["User"];
+            }
+            user = (User)Session["User"];
             NameLbl.Text = user.Username;
             //
 

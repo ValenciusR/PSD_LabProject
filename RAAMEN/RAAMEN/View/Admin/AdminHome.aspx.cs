@@ -19,19 +19,22 @@ namespace RAAMEN.View.Admin
                 Response.Redirect("../Login.aspx");
                 return;
             }
-            else if (Convert.ToInt32(Session["UserRole"]) == 3)
-            {
-                Response.Redirect("../Member/MemberHome.aspx");
-                return;
-            }
-            else if (Convert.ToInt32(Session["UserRole"]) == 2)
-            {
-                Response.Redirect("../Staff/StaffHome.aspx");
-                return;
-            }
 
             // Kalau butuh data user dari session
-            User user = (User)Session["User"];
+            User user;
+            if (Session["User"] == null)
+            {
+                var id = Convert.ToInt32(cookie["UserId"]);
+                user = (from u in db.Users where u.Id.Equals(id) select u).FirstOrDefault();
+                Session["User"] = user;
+                Session["UserRole"] = user.RoleId;
+                Session["UserId"] = user.Id;
+            }
+            else
+            {
+                user = (User)Session["User"];
+            }
+            user = (User)Session["User"];
             NameLbl.Text = user.Username;
             //
 

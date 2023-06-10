@@ -11,8 +11,28 @@ namespace RAAMEN.View.Staff
 {
     public partial class UpdateRamenStaff : System.Web.UI.Page
     {
+        private DatabaseEntities db = new DatabaseEntities();
         protected void Page_Load(object sender, EventArgs e)
         {
+            HttpCookie cookie = Request.Cookies["DataUser"];
+            User user;
+            if (Session["User"] == null && cookie == null)
+            {
+                Response.Redirect("../Login.aspx");
+                return;
+            }
+            if (Session["User"] == null)
+            {
+                var id = Convert.ToInt32(cookie["UserId"]);
+                user = (from u in db.Users where u.Id.Equals(id) select u).FirstOrDefault();
+                Session["User"] = user;
+                Session["UserRole"] = user.RoleId;
+                Session["UserId"] = user.Id;
+            }
+            else
+            {
+                user = (User)Session["User"];
+            }
             if (!IsPostBack)
             {
                 int id = int.Parse(Request.QueryString["id"]);

@@ -11,8 +11,25 @@ namespace RAAMEN.View.Admin
 {
     public partial class UpdateRamenAdmin : System.Web.UI.Page
     {
+        private DatabaseEntities db = new DatabaseEntities();
         protected void Page_Load(object sender, EventArgs e)
         {
+            User user;
+            HttpCookie cookie = Request.Cookies["DataUser"];
+            if (Session["User"] == null && cookie == null)
+            {
+                Response.Redirect("../Login.aspx");
+                return;
+            }
+            if (Session["User"] == null)
+            {
+                Response.Redirect("AdminHome.aspx");
+                return;
+            }
+            else
+            {
+                user = (User)Session["User"];
+            }
             if (!IsPostBack)
             {
                 int id = int.Parse(Request.QueryString["id"]);

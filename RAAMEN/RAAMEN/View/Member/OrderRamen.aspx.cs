@@ -12,13 +12,32 @@ namespace RAAMEN.View.Member
 {
     public partial class OrderRamen : System.Web.UI.Page
     {
-
+        private DatabaseEntities db = new DatabaseEntities();
         public static ArrayList ramensId = new ArrayList();
         public static ArrayList ramensQty = new ArrayList();
 
         public static ArrayList ramenss = new ArrayList();
         protected void Page_Load(object sender, EventArgs e)
         {
+            User user;
+            HttpCookie cookie = Request.Cookies["DataUser"];
+            if (Session["User"] == null && cookie == null)
+            {
+                Response.Redirect("../Login.aspx");
+                return;
+            }
+            if (Session["User"] == null)
+            {
+                var id = Convert.ToInt32(cookie["UserId"]);
+                user = (from u in db.Users where u.Id.Equals(id) select u).FirstOrDefault();
+                Session["User"] = user;
+                Session["UserRole"] = user.RoleId;
+                Session["UserId"] = user.Id;
+            }
+            else
+            {
+                user = (User)Session["User"];
+            }
             RamenView.DataSource = RamenController.getAllRamen();
             RamenView.DataBind();
 

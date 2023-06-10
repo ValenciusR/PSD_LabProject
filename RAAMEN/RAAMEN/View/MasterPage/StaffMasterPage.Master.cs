@@ -14,13 +14,7 @@ namespace RAAMEN.View.MasterPage
         private DatabaseEntities db = new DatabaseEntities();
         protected void Page_Load(object sender, EventArgs e)
         {
-            HttpCookie cookie = Request.Cookies["DataUser"];
-            if (Session["User"] == null && cookie == null)
-            {
-                Response.Redirect("../Login.aspx");
-                return;
-            }
-            else if (Convert.ToInt32(Session["UserRole"]) == 1)
+            if (Convert.ToInt32(Session["UserRole"]) == 1)
             {
                 Response.Redirect("../Admin/AdminHome.aspx");
                 return;
@@ -30,18 +24,6 @@ namespace RAAMEN.View.MasterPage
                 Response.Redirect("../Member/MemberHome.aspx");
                 return;
             }
-
-            User user;
-            if (Session["User"] == null)
-            {
-                var id = Convert.ToInt32(cookie["UserId"]);
-                user = (from u in db.Users where u.Id.Equals(id) select u).FirstOrDefault();
-                Session["User"] = user;
-            }
-            else
-            {
-                user = (User)Session["User"];
-            }
         }
         protected void HomeBtn_Click(object sender, EventArgs e)
         {
@@ -50,7 +32,7 @@ namespace RAAMEN.View.MasterPage
 
         protected void ManageBtn_Click(object sender, EventArgs e)
         {
-            Response.Redirect("ManageRamenAdmin.aspx");
+            Response.Redirect("ManageRamenStaff.aspx");
         }
 
         protected void QueueBtn_Click(object sender, EventArgs e)
