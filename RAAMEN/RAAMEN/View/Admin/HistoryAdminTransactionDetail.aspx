@@ -3,6 +3,8 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div>
-        <asp:Label ID="Label1" runat="server" Text="SUKSES"></asp:Label>
+        
+        <asp:GridView ID="detailTransaction" runat="server"></asp:GridView>
+        
     </div>
 </asp:Content>

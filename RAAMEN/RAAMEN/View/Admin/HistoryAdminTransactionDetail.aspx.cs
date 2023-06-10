@@ -1,4 +1,5 @@
-﻿using RAAMEN.Model;
+﻿using RAAMEN.Controller;
+using RAAMEN.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -32,6 +33,12 @@ namespace RAAMEN.View.Admin
             {
                 user = (User)Session["User"];
             }
+
+            int headerId = int.Parse(Request.QueryString["id"]);
+
+            detailTransaction.DataSource = TransactionController.getAllDetailTransactionByHeaderId(headerId);
+            detailTransaction.DataBind();
+
         }
     }
 }

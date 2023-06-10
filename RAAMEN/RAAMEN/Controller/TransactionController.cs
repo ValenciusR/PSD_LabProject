@@ -38,5 +38,10 @@ namespace RAAMEN.Controller
         {
             return TransactionHandler.getAllTransactionByCustomerId(customerId);
         }
+
+        public static List<Detail> getAllDetailTransactionByHeaderId(int headerId)
+        {
+            return TransactionHandler.getAllDetailTransactionByHeaderId(headerId);
+        }
     }
 }

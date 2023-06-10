@@ -50,7 +50,6 @@ namespace RAAMEN.Repository
 
         public static List<Header> getAllTransactionByCustomerId(int customerId)
         {
-            //INI PERLU DISELEKSI BASED ON ID USER
             List<Header> allHeadersData = db.Headers.ToList();
 
             List<Header> allCustomerData = new List<Header>();
@@ -62,6 +61,21 @@ namespace RAAMEN.Repository
                 }
             }
             return allCustomerData; 
+        }
+
+        public static List<Detail> getAllDetailTransactionByHeaderId(int headerId)
+        {
+            List<Detail> allDetailsData = db.Details.ToList();
+
+            List<Detail> allHeaderDetailsData = new List<Detail>();
+            foreach (Detail detail in allDetailsData)
+            {
+                if (detail.HeaderId == headerId)
+                {
+                    allHeaderDetailsData.Add(detail);
+                }
+            }
+            return allHeaderDetailsData;
         }
     }
 }

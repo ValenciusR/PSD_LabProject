@@ -42,7 +42,7 @@ namespace RAAMEN.View.Member
         {
             GridViewRow row = CustomerHistory.Rows[e.NewEditIndex];
             int id = int.Parse(row.Cells[1].Text);
-            Response.Redirect("MemberHome.aspx");
+            Response.Redirect("HistoryMemberTransactionDetail.aspx?id="+id);
         }
     }
 }

@@ -42,7 +42,6 @@ namespace RAAMEN.View.Admin
         {
             GridViewRow row = AdminHistory.Rows[e.NewEditIndex];
             int id = int.Parse(row.Cells[1].Text);
-            //bug -> gabisa return response
             Response.Redirect("HistoryAdminTransactionDetail.aspx?id="+id);
         }
     }

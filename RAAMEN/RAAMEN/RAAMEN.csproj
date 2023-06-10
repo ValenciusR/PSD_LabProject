@@ -669,6 +669,7 @@
     <Content Include="View\Admin\ViewReport.aspx" />
     <Content Include="View\Login.aspx" />
     <Content Include="View\Member\HistoryMember.aspx" />
+    <Content Include="View\Member\HistoryMemberTransactionDetail.aspx" />
     <Content Include="View\Member\MemberHome.aspx" />
     <Content Include="View\Member\OrderRamen.aspx" />
     <Content Include="View\Member\ProfileMember.aspx" />
@@ -836,6 +837,13 @@
     </Compile>
     <Compile Include="View\Member\HistoryMember.aspx.designer.cs">
       <DependentUpon>HistoryMember.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Member\HistoryMemberTransactionDetail.aspx.cs">
+      <DependentUpon>HistoryMemberTransactionDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Member\HistoryMemberTransactionDetail.aspx.designer.cs">
+      <DependentUpon>HistoryMemberTransactionDetail.aspx</DependentUpon>
     </Compile>
     <Compile Include="View\Member\MemberHome.aspx.cs">
       <DependentUpon>MemberHome.aspx</DependentUpon>
